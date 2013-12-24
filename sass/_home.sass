@@ -1,0 +1,341 @@
+.flex-container
+	max-width: 100%
+	margin: 0 auto
+	background: url(../img/loading.gif) no-repeat center center
+
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus
+	outline: none
+
+.slides, .flex-control-nav, .flex-direction-nav
+	margin: 0
+	padding: 0
+	list-style: none
+
+.flexslider
+	margin: 0
+	padding: 0
+	.slides
+		li
+			display: none
+			-webkit-backface-visibility: hidden
+			position: relative
+		.slider_bg
+			width: 100%
+			display: block
+
+.flex-pauseplay span
+	text-transform: capitalize
+
+.slides:after
+	content: "."
+	display: block
+	clear: both
+	visibility: hidden
+	line-height: 0
+	height: 0
+
+html[xmlns] .slides
+	display: block
+
+* html .slides
+	height: 1%
+
+.no-js .slides > li:first-child
+	display: block
+
+.flexslider
+	margin: 0px 0 40px
+	background: #fff
+	position: relative
+	height: 400px
+	overflow: hidden
+	zoom: 1
+	max-width: 100%
+	@media only screen and (min-width: 320px) and (max-width: 768px)
+		margin: 75px auto 0
+	li
+		height: 400px
+
+.flex-viewport
+	max-height: 400px
+	-webkit-transition: all 1s ease
+	-moz-transition: all 1s ease
+	transition: all 1s ease
+
+.loading .flex-viewport
+	max-height: 300px
+
+.flexslider .slides
+	zoom: 1
+	height: 400px
+
+.flex-direction-nav
+	a
+		margin-top: -16px
+		outline: 0
+		width: 54px
+		height: 72px
+		display: block
+		position: absolute
+		top: 30%
+		z-index: 10
+		cursor: pointer
+		text-indent: -9999px
+		@include transition (all .3s ease)
+		@media only screen and (min-width: 320px) and (max-width: 768px)
+			bottom: 30%
+			top: auto
+		@media only screen and (max-width: 450px)
+			bottom: 5%
+			top: auto
+	.flex-next
+		right: 15px
+		background: url(../img/slider_arrows2.svg) no-repeat -53px 0
+		&:hover
+			right: 5px
+		@media only screen and (min-width: 320px) and (max-width: 768px)
+			right: 0
+			background: url(../img/slider_arrows2.svg) no-repeat -53px 0
+	.flex-prev
+		left: 15px
+		background: url(../img/slider_arrows2.svg) no-repeat 0 0
+		&:hover
+			left: 5px
+		@media only screen and (min-width: 320px) and (max-width: 768px)
+			left: 0
+			background: url(../img/slider_arrows2.svg) no-repeat 0 0
+
+.no-svg .flex-direction-nav
+	.flex-next
+		background: url(../img/slider_arrows2.png) no-repeat -53px 0
+	.flex-prev
+		background: url(../img/slider_arrows2.png) no-repeat 0 0
+
+
+.flex-direction-nav .flex-disabled
+	opacity: .3!important
+	filter: alpha(opacity = 30)
+	cursor: default
+
+.flex-control-nav
+	width: 100%
+	position: absolute
+	text-align: center
+	display: none
+	li
+		margin: 0 6px
+		display: inline-block
+		zoom: 1
+		*display: inline
+
+.flex-control-paging li a
+	width: 11px
+	height: 11px
+	display: block
+	background: #999
+	cursor: pointer
+	text-indent: -9999px
+	&:hover
+		background: $citylax_blue
+	&.flex-active
+		background: $citylax_blue
+		cursor: default
+
+.flex-caption
+	position: absolute
+	width: 90%
+	max-width: 1170px
+	text-align: left
+	right: 0
+	bottom: 20px
+	z-index: 1
+	padding: 5px
+	@media only screen and (max-width: 768px)
+		bottom: 20%
+		top: auto
+	@media only screen and (max-width: 500px)
+		bottom: 3%
+		top: auto
+	img
+		margin: 0 auto
+		text-align: center
+		display: block
+		width: 377px
+		@media only screen and (max-width: 500px)
+			width: 200px
+	.vid_wrap
+		max-width: 600px
+		display: block
+	.slider_cta
+		display: inline-block
+		padding: 5px 15px
+		border: 2px solid white
+		margin: 15px 0
+.home_cta
+	div
+		a
+			width: 80%
+			margin: 0 auto
+			display: block
+			border: 5px solid #333333
+			overflow: hidden
+			@include transition (all .5s ease)
+			img
+				width: 100%
+			p
+				margin: -5px 0
+				padding: 7px 0
+				text-align: center
+				background: #333333
+				z-index: 3
+				position: relative
+				text-transform: uppercase
+			&:hover
+				-webkit-border-radius: 15px
+.impact_wrap
+	width: 100%
+	margin: 40px auto
+	padding: 40px 0
+	background: url(../img/impact_bg.jpg) no-repeat center center
+	background-size: cover
+	h3
+		margin: 30px 20px
+		text-align: center
+		color: white
+		font-family: 'Open Sans'
+		font-size: 18px
+		font-weight: 300
+		span
+			font-size: 50px
+			font-family: 'Oswald'
+			font-weight: 300
+.share_newsletter
+	text-align: center
+	.share_wrap
+		height: 100%
+		margin-top: 15px
+		input[type="checkbox"]
+			display: none
+		.checkbox:checked + .label
+			color: $citylax_blue
+		.checkbox:checked ~ .social
+			opacity: 1
+			-webkit-transform: scale(1) translateY(-100px)
+			-moz-transform: scale(1) translateY(-90px)
+			-o-transform: scale(1) translateY(-90px)
+			transform: scale(1) translateY(-90px)
+			-webkit-transition: .5s
+			-moz-transition: .5s
+			-o-transition: .5s
+			transition: .5s
+		.label
+			font-size: 40px
+			cursor: pointer
+			margin: 0
+			line-height: 24px
+			display: block
+			width: 100%
+			text-align: center
+			p
+				padding: 10px 15px
+				background: $citylax_blue
+				border: 1px solid #999
+				color: $white
+				margin: 25px 0
+				text-transform: uppercase
+				font-family: 'Oswald'
+				font-size: 12px
+				letter-spacing: 2px
+				max-width: 150px
+				display: inline-block
+		.social
+			transform-origin: 50% 0%
+			-webkit-transform: scale(0) translateY(-100px)
+			-moz-transform: scale(0) translateY(-100px)
+			-o-transform: scale(0) translateY(-100px)
+			transform: scale(0) translateY(-100px)
+			opacity: 0
+			ul
+				position: absolute
+				left: 0
+				right: 0
+				margin: auto
+				color: #fff
+				height: 46px
+				width: 180px
+				background: #3B5998
+				padding: 0
+				list-style: none
+				bottom: -14px
+			ul li a
+				font-size: 20px
+				cursor: pointer
+				width: 60px
+				margin: 0
+				padding: 12px 0
+				text-align: center
+				float: left
+				display: block
+				height: 22px
+				color: #ffffff
+				background: transparent
+			ul li a:hover
+				color: rgba(0,0,0,.5)
+			ul:after
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				right: 0
+				margin: 35px auto
+				height: 0
+				width: 0
+				border-left: 20px solid transparent
+				border-right: 20px solid transparent
+				border-top: 20px solid #3B5998
+			li a.tweet 
+				background: #6CDFEA
+				padding: 12px 0
+			li a.mail_share
+				background: #999999
+				padding: 12px 0
+	#mc_embed_signup
+		margin: 25px 0 45px
+		h3
+			color: $dark_gray
+		form
+			margin-top: 23px
+			input
+				width: 100%
+				padding: 10px 0
+				color: $black
+				background: rgba(255,255,255,.5)
+				border: 1px solid $black
+				text-align: center
+				font-family: 'Source Sans Pro'
+				font-size: 13px
+				display: inline
+				max-width: 400px
+			::-webkit-input-placeholder
+				color: $black
+			:-moz-placeholder
+				color: $black
+			::-moz-placeholder
+				color: $black
+			:-ms-input-placeholder
+				color: $black
+			.submit
+				display: inline
+				.btn
+					padding: 10px 15px
+					background: #999999
+					border: 1px solid #333333
+					color: $white
+					display: inline-block
+					text-transform: uppercase
+					font-size: 13px
+					letter-spacing: 2px
+					max-width: 110px
+	
+					
+			

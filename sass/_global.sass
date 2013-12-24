@@ -1,0 +1,243 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed)
+@import url(http://fonts.googleapis.com/css?family=Open+Sans)
+@import url(http://fonts.googleapis.com/css?family=Oswald)
+@import url(http://weloveiconfonts.com/api/?family=entypo)
+
+*
+	margin: 0px
+
+html,body
+	height: 100%
+	width: 100%
+	color: #999999
+	font-family: 'Open Sans', sans-serif
+	background: $white
+.clearfix
+	zoom: 1
+	clear: both
+
+.clearfix:before, .clearfix:after
+	content: '\0020'
+	display: block
+	height: 0
+	overflow: hidden
+
+.clearfix:after
+	clear: both
+p
+	line-height: 1.3em
+	margin: 15px 0
+	font-size: 14px
+a
+	color: #fff
+	text-decoration: none
+img
+	margin: 0 auto
+	display: block
+h1,h2,h3,h4,h5
+	font-family: 'Oswald'
+[data-icon]:before 
+	font-family: 'social_icons'
+	content: attr(data-icon)
+	speak: none
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+h1
+	font-size: 32px
+	margin: 15px 0
+	text-transform: uppercase
+	@media only screen and (min-width: 320px) and (max-width: 768px)
+		font-size: 30px
+h3
+	font-size: 20px
+.container
+	width: 90%
+	max-width: 1170px
+	margin: 0 auto
+	position: relative
+	.grid3, .grid4, .grid6, .grid8, .grid9
+		float: left
+		margin: 0
+		padding: 0
+		position: relative
+	.grid3
+		width: 25%
+	.grid4
+		width: 33%
+	.grid6
+		width: 50%
+	.grid8
+		width: 66%
+	.grid9
+		width: 75%
+.center
+	text-align: center
+.btn
+	padding: 5px 15px
+	border: 2px solid white
+	margin: 15px 0
+	display: inline-block
+	background: transparent
+	@include transition (background .3s ease-in-out)
+	&:hover
+		background: $white
+		color: $dark_gray	
+nav
+	position: relative
+	top: 0
+	left: 0
+	width: 100%
+	height: 105px
+	z-index: 99
+	font-family: 'Roboto Condensed', sans-serif
+	a.logo
+		position: absolute
+		top: 16px
+		left: 0
+		background: url(../img/citylax_logo.png) no-repeat
+		width: 250px
+		height: 84px
+		background-size: 250px 84px
+		@media only screen and (min-width: 320px) and (max-width: 768px)
+			top: 20px
+			width: 200px
+			height: 30px
+			background-size: 200px 30px
+			left: 20px
+	ul.main_nav
+		float: right
+		list-style: none
+		text-transform: uppercase
+		letter-spacing: 1px
+		@media only screen and (min-width: 320px) and (max-width: 768px)
+			display: none
+			float: none
+			padding-top: 75px
+			z-index: 9999
+		li
+			display: inline
+			margin: 0 4px
+			padding:
+				right: 4px
+			&:after
+				content: "|"
+				color: $citylax_blue
+			a
+				color: $black
+				line-height: 105px
+				text-decoration: none
+				font-size: 14px
+				padding:
+					right: 15px
+				@include transition (color .5s)
+				&:hover
+					color: $citylax_blue
+			@media only screen and (min-width: 320px) and (max-width: 768px)
+				display: block
+				width: 100%
+				background: rgba(0,0,0,.8)
+				text-align: center
+				margin: 0
+				border-bottom: 1px solid $citylax_blue
+				&:after
+					content: " "
+				a
+					padding: 0
+					font-size: 18px
+					font-weight: 700
+		li.last
+			a
+				padding:
+					right: 0
+			&:after
+				content: " "
+	ul.nav-active
+		display: block
+	.nav_wrap
+		@media only screen and (min-width: 320px) and (max-width: 768px)
+			width: 100%
+.no-backgroundsize a.logo
+	position: absolute
+	top: 16px
+	left: 0
+	background: url(../img/cudenver_logo_ie.png) no-repeat
+	width: 300px
+	height: 45px
+.nav-mobile 
+	display: none
+	cursor: pointer
+	position: absolute
+	top: 0
+	right: 15px
+	background: $black url(../img/nav.svg) no-repeat center center
+	height: 65px
+	width: 40px
+	@media only screen and (min-width: 320px) and (max-width: 768px)
+		display: block
+.no-svg .nav-mobile
+	display: none
+	cursor: pointer
+	position: absolute
+	top: 0
+	right: 15px
+	background: $black url(../img/nav.png) no-repeat center center
+	height: 65px
+	width: 40px
+	@media only screen and (min-width: 320px) and (max-width: 768px)
+		display: block
+.nav-mobile-open
+	border-radius: 5px 5px 0 0
+	-webkit-border-radius: 5px 5px 0 0
+	-moz-border-radius: 5px 5px 0 0
+.body_wrap
+	position: relative
+	margin: 0 auto
+footer
+	bottom: 0
+	left: 0
+	width: 100%
+	background: rgba(0,0,0,.2)
+	height: auto
+	padding: 20px 0
+	margin: 20px auto 0
+	.container
+		margin:
+			top: 10px
+		section
+			width: 20%
+			float: left
+			h3
+				color: white
+				margin:
+					bottom: 10px
+			li
+				color: $black
+				font-size: 13px
+				a
+					color: $black
+	@media only screen and (min-width: 320px) and (max-width: 768px)
+		position: relative
+		bottom: 0
+		height: auto
+		.toggle_expand
+			display: none
+		.container
+			padding: 30px 0
+			margin: 0 auto
+			section
+				width: 50%
+				margin: 10px 0
+	p
+		font-size: 12px
+		text-align: center
+		position: absolute
+		width: 100%
+		bottom: 10px
+		@media only screen and (min-width: 320px) and (max-width: 768px)
+			position: relative
+			margin: 50px 20px
+			width: auto
+	
