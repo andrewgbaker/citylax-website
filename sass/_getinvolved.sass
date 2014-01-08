@@ -1,4 +1,4 @@
-.getinvolved
+.get_involved
 	.banner
 		width: 100% 
 		background: url(/img/donate_banner.jpg) no-repeat
@@ -10,10 +10,83 @@
 			width: 50%
 			font-size: 38px
 			font-weight: 100
+			@media only screen and (min-width: 320px) and (max-width: 767px)
+				width: 100%
+				font-size: 24px
 		a
 			display: inline-block
 			margin-top: 20px
 	.grid4
 		text-align: right
 		padding-top: 50px
+.involved_cta
+	margin: 20px auto
+	.grid3
+		padding: 30px 0
+		text-align: center
+		a
+			color: $dark_gray
+			font-size: 18px
+			border: 2px solid $citylax_blue
+			width: 90%
+			padding: 25px 60px 25px 100px
+			line-height: 76px
+			width: 160px
+			position: relative
+			background: #efefef
+			&:before
+				font-size: 30px
+				color: $white
+				background: $citylax_blue
+				position: absolute
+				width: 80px
+				border-right: 2px solid $citylax_blue
+				left: 0
+				@include transition (background .3s ease)
+			&:hover
+				&:before
+					background: transparent
+					color: $citylax_blue
+#volunteer_events
+	iframe
+		width: 100%
+		height: auto
+		min-height: 900px
+		font-family: 'Open Sans', sans-serif
+	.event_wrap
+		background: #efefef
+		color: $dark_gray
+		h1, a
+			margin: 20px 30px
+			display: block
+			color: #999999
+		h1
+			color: #888888
+		a
+			margin-bottom: 40px
+			color: $dark_gray
+			p
+				line-height: 12px
+			span
+				border: 2px solid $citylax_blue
+				color: $citylax_blue
+				padding: 5px 15px
+				margin: 10px 0 0
+				display: inline-block
+			&:hover
+				span
+					background: $citylax_blue
+					color: white
+		.contact
+			width: 100%
+			padding: 25px 0 10px
+			text-align: center
+			margin: 10px auto 0
+			background: $white
+			a
+				margin: 0
+			ul
+				font-size: 14px
+				
+			
 		

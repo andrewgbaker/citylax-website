@@ -1,8 +1,10 @@
-/* MOBILE NAV COLLAPSE 
-	
-	(function () {
-		
-	    // Create mobile element
+
+
+
+$( document ).ready(function() {
+
+
+// Create mobile element
 	    var mobile = document.createElement('div');
 	    mobile.className = 'nav-mobile';
 	    document.querySelector('.nav_wrap').appendChild(mobile);
@@ -41,67 +43,12 @@
 		    	console.log(this);
 		    };
 	    });
-	})();
-	
-END MOBILE NAV	*/
-
-
-
-/* START WHYLAX ANIMATION JS
-
-(function () {
-  
-  var isOn = false;
-
-	$('#whylax').click(function() {
-	  if(isOn) {
-	    reset();
-	  } else {
-	    setPosition();
-	  }
-	});
-	
-	function setPosition() {
-	  isOn = true;
-	  var links = $('#whylax a');
-	  var radius = (links.length * links.width()) / 2;
-	  var degree = Math.PI / links.length, angle = degree / 2;
-	  
-	  links.each(function() {
-	    var x = Math.round(radius * Math.cos(angle));
-	    var y = Math.round(radius * Math.sin(angle));
 	    
-	    $(this).css({
-	      left: x + 'px',
-	      bottom: y + 'px'
-	    });
 	    
-	    if(window.console) {
-	      console.log(x, y);
-	    }
 	    
-	    angle += degree;
-	  });
-	}
-	
-	function reset() {
-	  $('#whylax a').css({
-	    left: 0 + 'px',
-	    bottom: 0 + 'px'
-	  });
-	  
-	  isOn = false;
-	}
-
-})();
-
-END WHYLAX ANIMATION */
-
-
-// Can also be used with $(document).ready()
-$(window).load(function() {
-
-	if($(".flexslider").length > 0) {
+	 // START FLEXSLIDER
+	    
+	 if($(".flexslider").length > 0) {
  
 		// Vimeo API nonsense
 		var player = document.getElementById('player_1');
@@ -145,11 +92,30 @@ $(window).load(function() {
 		
 	}
 	
+	// START ICON ANIMATION ABOUT PAGE
+	
 	if($("#whylax").length > 0) {
 		setTimeout(function() {
 			$('#whylax a').removeClass('ico_in');
 		}, 500);
+		
+		$('#whylax a').click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 900);
+		    return false;
+		});
+		
 	}
-  
+	
+	// PAGE SLIDE FOR GET-INVOLVED
+	
+	$('.involved_cta a').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 900);
+	    return false;
+	});
 
+	    
 });

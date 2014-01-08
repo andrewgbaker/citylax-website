@@ -87,7 +87,8 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 32px;
   margin: 15px 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #888888; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     h1 {
       font-size: 30px; } }
@@ -115,6 +116,14 @@ h3 {
     width: 66%; }
   .container .grid9 {
     width: 75%; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container .grid3, .container .grid4, .container .grid6, .container .grid8, .container .grid9 {
+      width: 100%; }
+    .container .grid3 {
+      width: 50%; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) and (max-width: 500px) {
+      .container .grid3 {
+        width: 100%; } }
 
 .center {
   text-align: center; }
@@ -151,9 +160,9 @@ nav {
     @media only screen and (min-width: 320px) and (max-width: 768px) {
       nav a.logo {
         top: 20px;
-        width: 200px;
-        height: 30px;
-        background-size: 200px 30px;
+        width: 180;
+        height: 60px;
+        background-size: 180px 60px;
         left: 20px; } }
   nav ul.main_nav {
     float: right;
@@ -196,12 +205,16 @@ nav {
             content: " "; }
           nav ul.main_nav li a {
             padding: 0;
-            font-size: 18px;
-            font-weight: 700; } }
+            font-size: 14px;
+            color: white;
+            font-weight: 700;
+            line-height: 30px; } }
     nav ul.main_nav li.last a {
       padding-right: 0; }
     nav ul.main_nav li.last:after {
       content: " "; }
+    nav ul.main_nav #active_nav a {
+      color: #508ac8; }
   nav ul.nav-active {
     display: block; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -220,9 +233,9 @@ nav {
   display: none;
   cursor: pointer;
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 15px;
-  background: black url(../img/nav.svg) no-repeat center center;
+  background: white url(../img/nav.svg) no-repeat center center;
   height: 65px;
   width: 40px; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -233,9 +246,9 @@ nav {
   display: none;
   cursor: pointer;
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 15px;
-  background: black url(../img/nav.png) no-repeat center center;
+  background: white url(../img/nav.png) no-repeat center center;
   height: 65px;
   width: 40px; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -262,7 +275,7 @@ footer {
   footer .container {
     margin-top: 10px; }
     footer .container section {
-      width: 20%;
+      width: 30%;
       float: left; }
       footer .container section h3 {
         color: white;
@@ -296,6 +309,41 @@ footer {
         position: relative;
         margin: 50px 20px;
         width: auto; } }
+  footer #mc_embed_signup {
+    margin: 25px 0 45px; }
+    footer #mc_embed_signup h3 {
+      color: #333333; }
+    footer #mc_embed_signup form {
+      margin-top: 23px;
+      -moz-placeholder-color: black;
+      -ms-input-placeholder-color: black; }
+      footer #mc_embed_signup form input {
+        width: 100%;
+        padding: 10px 0;
+        color: black;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid black;
+        text-align: center;
+        font-family: "Source Sans Pro";
+        font-size: 13px;
+        display: inline;
+        max-width: 400px; }
+      footer #mc_embed_signup form ::-webkit-input-placeholder {
+        color: black; }
+      footer #mc_embed_signup form ::-moz-placeholder {
+        color: black; }
+      footer #mc_embed_signup form .submit {
+        display: inline; }
+        footer #mc_embed_signup form .submit .btn {
+          padding: 10px 15px;
+          background: #999999;
+          border: 1px solid #333333;
+          color: white;
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 13px;
+          letter-spacing: 2px;
+          max-width: 110px; }
 
 .flex-container {
   max-width: 100%;
@@ -349,11 +397,32 @@ html[xmlns] .slides {
   overflow: hidden;
   zoom: 1;
   max-width: 100%; }
-  @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .flexslider {
-      margin: 75px auto 0; } }
   .flexslider li {
     height: 400px; }
+  .flexslider .slider1 {
+    background: url(/img/slider0.jpg) no-repeat center center;
+    background-size: cover; }
+  .flexslider .slider2 {
+    background: url(/img/slider4.jpg) no-repeat center center;
+    background-size: cover; }
+  .flexslider .slider3 {
+    background: url(/img/slider1.jpg) no-repeat center center;
+    background-size: cover; }
+  .flexslider .slider4 {
+    background: url(/img/CityLaxGala_Slider.jpg) no-repeat center center;
+    background-size: cover; }
+    .flexslider .slider4 .flex-caption {
+      bottom: 40%; }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .flexslider {
+      margin: 15px auto 25px;
+      height: 300px; }
+      .flexslider li {
+        height: 300px; }
+      .flexslider .slider1 .flex-caption {
+        bottom: 10%;
+        width: 70%;
+        left: 15%; } }
 
 .flex-viewport {
   max-height: 400px;
@@ -460,44 +529,59 @@ html[xmlns] .slides {
     .flex-caption {
       bottom: 3%;
       top: auto; } }
-  .flex-caption img {
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-    width: 377px; }
-    @media only screen and (max-width: 500px) {
-      .flex-caption img {
-        width: 200px; } }
   .flex-caption .vid_wrap {
     max-width: 600px;
     display: block; }
+  .flex-caption p {
+    margin: 5px auto; }
+  .flex-caption h1 {
+    margin: 5px auto; }
   .flex-caption .slider_cta {
     display: inline-block;
     padding: 5px 15px;
     border: 2px solid white;
-    margin: 15px 0; }
+    margin: 10px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .flex-caption {
+      bottom: 30%;
+      text-align: center; }
+      .flex-caption .slider_cta {
+        margin: 5px 0; }
+      .flex-caption h1 {
+        margin: 5px auto; } }
 
-.home_cta div a {
-  width: 80%;
-  margin: 0 auto;
-  display: block;
-  border: 5px solid #333333;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  .home_cta div a img {
-    width: 100%; }
-  .home_cta div a p {
-    margin: -5px 0;
-    padding: 7px 0;
-    text-align: center;
-    background: #333333;
-    z-index: 3;
-    position: relative;
-    text-transform: uppercase; }
-  .home_cta div a:hover {
-    -webkit-border-radius: 15px; }
+.home_cta .grid3 {
+  margin: 10px auto; }
+  .home_cta .grid3 a {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid #333333;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .home_cta .grid3 a img {
+      width: 100%; }
+    .home_cta .grid3 a p {
+      margin: -5px 0;
+      padding: 7px 0;
+      text-align: center;
+      background: #333333;
+      z-index: 3;
+      position: relative;
+      text-transform: uppercase;
+      -webkit-transition: background 0.5s ease;
+      -moz-transition: background 0.5s ease;
+      transition: background 0.5s ease; }
+    .home_cta .grid3 a:hover {
+      -webkit-border-radius: 15px;
+      border: 5px solid #508ac8; }
+      .home_cta .grid3 a:hover p {
+        background: #508ac8; }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .home_cta {
+    margin: 20px auto; } }
 
 .impact_wrap {
   width: 100%;
@@ -607,45 +691,18 @@ html[xmlns] .slides {
       .share_newsletter .share_wrap .social li a.mail_share {
         background: #999999;
         padding: 12px 0; }
-  .share_newsletter #mc_embed_signup {
-    margin: 25px 0 45px; }
-    .share_newsletter #mc_embed_signup h3 {
-      color: #333333; }
-    .share_newsletter #mc_embed_signup form {
-      margin-top: 23px;
-      -moz-placeholder-color: black;
-      -ms-input-placeholder-color: black; }
-      .share_newsletter #mc_embed_signup form input {
-        width: 100%;
-        padding: 10px 0;
-        color: black;
-        background: rgba(255, 255, 255, 0.5);
-        border: 1px solid black;
-        text-align: center;
-        font-family: "Source Sans Pro";
-        font-size: 13px;
-        display: inline;
-        max-width: 400px; }
-      .share_newsletter #mc_embed_signup form ::-webkit-input-placeholder {
-        color: black; }
-      .share_newsletter #mc_embed_signup form ::-moz-placeholder {
-        color: black; }
-      .share_newsletter #mc_embed_signup form .submit {
-        display: inline; }
-        .share_newsletter #mc_embed_signup form .submit .btn {
-          padding: 10px 15px;
-          background: #999999;
-          border: 1px solid #333333;
-          color: white;
-          display: inline-block;
-          text-transform: uppercase;
-          font-size: 13px;
-          letter-spacing: 2px;
-          max-width: 110px; }
 
-.mission .grid4 {
-  text-align: left;
-  padding-top: 30px; }
+.mission {
+  margin: 50px auto 80px; }
+  .mission .grid4 {
+    text-align: left; }
+    .mission .grid4 .opportunity_header {
+      margin-top: 60px; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .mission {
+      margin: 15px auto 80px; }
+      .mission .grid4 .opportunity_header {
+        margin-top: 20px; } }
 
 .mission_grid {
   margin: 30px auto; }
@@ -661,9 +718,10 @@ html[xmlns] .slides {
   position: relative;
   display: block;
   width: 480px;
-  height: 437px;
+  height: 467px;
   margin: 0 auto;
   z-index: 2;
+  border-bottom: 10px solid #508ac8;
   background: url(/img/whylax_center.jpg) no-repeat bottom center; }
   .whylax_links #whylax {
     position: absolute;
@@ -682,13 +740,14 @@ html[xmlns] .slides {
       height: 100px;
       border-radius: 50%;
       background: #508ac8;
-      -webkit-transition: bottom 0.5s ease-in-out, left 0.5s ease-in-out, background 0.3s ease;
-      -moz-transition: bottom 0.5s ease-in-out, left 0.5s ease-in-out, background 0.3s ease;
+      -webkit-transition: bottom 0.5s ease-in-out, left 0.5s ease-in-out, background 0.3s ease, opacity 0.5s ease;
+      -moz-transition: bottom 0.5s ease-in-out, left 0.5s ease-in-out, background 0.3s ease, opacity 0.5s ease;
       text-align: center;
       text-decoration: none;
       line-height: 50px;
       color: #ebeae8;
-      z-index: 0; }
+      z-index: 0;
+      opacity: 1; }
       .whylax_links #whylax > a:hover {
         background: #333333; }
       .whylax_links #whylax > a:after {
@@ -708,11 +767,11 @@ html[xmlns] .slides {
       bottom: 202px; }
       .whylax_links #whylax .ico_gear:after {
         content: "equipment"; }
-    .whylax_links #whylax .ico_college {
+    .whylax_links #whylax .ico_academic {
       left: 0;
       bottom: 250px; }
-      .whylax_links #whylax .ico_college:after {
-        content: "counseling"; }
+      .whylax_links #whylax .ico_academic:after {
+        content: "academics"; }
     .whylax_links #whylax .ico_mentor {
       left: 147px;
       bottom: 202px; }
@@ -725,529 +784,208 @@ html[xmlns] .slides {
         content: "leadership"; }
     .whylax_links #whylax .ico_in {
       left: 0;
-      bottom: 0; }
-
-.people_home {
-  position: relative;
-  width: 100%;
-  height: auto; }
-  .people_home header {
-    background: #d8d8d7;
-    position: relative;
-    color: black;
-    text-align: center;
-    min-height: 20%;
-    height: 20%;
-    padding: 40px 0;
-    margin-top: 75px; }
-    .people_home header:before {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      margin-right: -0.25em; }
-    .people_home header .container {
-      width: 90%;
-      max-width: 900px;
-      display: inline-block;
-      vertical-align: middle; }
-      .people_home header .container h1 {
-        font-size: 40px;
-        text-transform: none;
-        line-height: 44px;
-        text-transform: uppercase; }
-        @media (max-width: 800px) {
-          .people_home header .container h1 {
-            font-size: 24px;
-            line-height: 30px; } }
-      .people_home header .container p {
-        margin-top: 15px; }
-    @media only screen and (min-width: 320px) and (max-width: 768px) {
-      .people_home header {
-        min-height: 27%;
-        height: 27%;
-        padding: 20px 0; } }
-  .people_home .people_boxes {
-    position: relative; }
-    .people_home .people_boxes article {
-      width: 33.33333%;
-      float: left;
-      height: 700px;
-      position: relative; }
-      @media only screen and (min-width: 320px) and (max-width: 768px) {
-        .people_home .people_boxes article {
-          width: 100%;
-          height: 400px;
-          max-height: 350px; } }
-      .people_home .people_boxes article a {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: rgba(0, 0, 0, 0.3);
-        -webkit-transition: background 0.3s ease;
-        -moz-transition: background 0.3s ease;
-        transition: background 0.3s ease; }
-        .people_home .people_boxes article a:hover {
-          background: transparent; }
-        .people_home .people_boxes article a:before {
-          content: "";
-          display: inline-block;
-          height: 100%;
-          vertical-align: middle;
-          margin-right: -0.25em; }
-        .people_home .people_boxes article a div {
-          display: inline-block;
-          width: 80%;
-          margin: 0 auto;
-          margin-left: 10%; }
-          @media only screen and (min-width: 320px) and (max-width: 768px) {
-            .people_home .people_boxes article a div {
-              vertical-align: middle; } }
-          .people_home .people_boxes article a div h3 {
-            font-size: 30px;
-            margin-bottom: 10px;
-            border-bottom: 4px solid #508ac8; }
-    .people_home .people_boxes .faculty {
-      background: url(../img/faculty_bg.jpg) no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-      @media only screen and (min-width: 320px) and (max-width: 768px) {
-        .people_home .people_boxes .faculty {
-          background-position: top; } }
-    .people_home .people_boxes .alumni {
-      background: url(../img/alumni_bg.jpg) no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-      @media only screen and (min-width: 320px) and (max-width: 768px) {
-        .people_home .people_boxes .alumni {
-          background-position: top; } }
-    .people_home .people_boxes .students {
-      background: url(../img/students_bg3.jpg) no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-      @media only screen and (min-width: 320px) and (max-width: 768px) {
-        .people_home .people_boxes .students {
-          background-position: top; } }
-
-.no-rgba .people_boxes a {
-  background: url(../img/ie_trans_black.png) repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute; }
-
-.faculty_home {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: white;
-  padding-bottom: 100px;
-  padding-top: 75px; }
-  .faculty_home .people_subnav {
-    width: 100%;
-    background: #508ac8; }
-    .faculty_home .people_subnav ul {
-      padding: 10px 0;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700; }
-      .faculty_home .people_subnav ul li {
-        display: inline;
-        margin-right: 20%; }
-        @media only screen and (max-width: 500px) {
-          .faculty_home .people_subnav ul li {
-            display: inline;
-            margin-right: 15%; } }
-        .faculty_home .people_subnav ul li a {
-          color: black; }
-          .faculty_home .people_subnav ul li a:hover {
-            color: white; }
-      .faculty_home .people_subnav ul .last {
-        margin: 0; }
-      .faculty_home .people_subnav ul .active {
-        color: white; }
-  .faculty_home .interior_header {
-    min-height: 20%;
-    height: 250px;
-    padding: 30px 0;
-    background-size: cover;
-    text-align: center;
-    margin: 0 auto; }
-    @media (max-width: 700px) {
-      .faculty_home .interior_header {
-        height: 200px; } }
-    .faculty_home .interior_header .container {
-      max-width: 1170px; }
-      .faculty_home .interior_header .container h1 {
-        color: white;
-        font-size: 50px;
-        text-transform: uppercase;
-        text-align: left;
-        line-height: 52px; }
-        @media (max-width: 700px) {
-          .faculty_home .interior_header .container h1 {
-            font-size: 30px;
-            line-height: 34px; } }
-  .faculty_home #faculty_header {
-    background: url(../img/faculty_header2.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .faculty_home .faculty_stories {
-    position: relative; }
-    .faculty_home .faculty_stories article {
-      width: 33.33333%;
-      float: left;
-      height: 400px;
-      position: relative;
-      background: white;
-      min-height: 30%;
-      overflow: hidden; }
-      @media (max-width: 1100px) {
-        .faculty_home .faculty_stories article {
-          width: 50%; } }
-      @media (max-width: 700px) {
-        .faculty_home .faculty_stories article {
-          width: 100%; } }
-      .faculty_home .faculty_stories article a {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        -webkit-transition: none;
-        -moz-transition: none;
-        transition: none;
-        background: none;
-        color: black; }
-        .faculty_home .faculty_stories article a:hover {
-          background: black;
-          color: white; }
-          .faculty_home .faculty_stories article a:hover .read_more {
-            line-height: 65px;
-            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), black);
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black); }
-          .faculty_home .faculty_stories article a:hover .read_btn {
-            bottom: 0; }
-        .faculty_home .faculty_stories article a div {
-          vertical-align: top;
-          padding: 30px 0;
-          width: 80%;
-          margin: 0 auto;
-          margin-left: 10%; }
-          .faculty_home .faculty_stories article a div h3 {
-            font-size: 30px;
-            line-height: 32px;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 4px solid #508ac8; }
-          .faculty_home .faculty_stories article a div .read_more {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            margin: 0;
-            padding: 20px 0;
-            background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), white);
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); }
-          .faculty_home .faculty_stories article a div .read_btn {
-            position: absolute;
-            bottom: -100%;
-            width: 100%;
-            left: 0;
-            text-align: center;
-            background: #508ac8;
-            color: white;
-            padding: 10px 0;
-            -webkit-transition: bottom 0.25s;
-            -moz-transition: bottom 0.25s;
-            transition: bottom 0.25s; }
-            .faculty_home .faculty_stories article a div .read_btn span {
-              color: black;
-              font-weight: 700; }
-  .faculty_home .campaign_boxes {
-    position: relative;
-    padding-bottom: 200px; }
-    @media only screen and (min-width: 320px) and (max-width: 768px) {
-      .faculty_home .campaign_boxes {
-        padding-bottom: 20px; } }
-    .faculty_home .campaign_boxes article {
-      width: 33.33333%;
-      float: left;
+      bottom: 0;
+      opacity: 0; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .whylax_links {
+      width: 100%;
       height: auto;
-      position: relative;
-      background: white;
-      color: black;
-      min-height: 30%;
-      overflow: hidden; }
-      @media (max-width: 1100px) {
-        .faculty_home .campaign_boxes article {
-          width: 50%; } }
-      @media (max-width: 700px) {
-        .faculty_home .campaign_boxes article {
-          width: 100%; } }
-      .faculty_home .campaign_boxes article a {
-        color: black;
-        text-decoration: underline; }
-      .faculty_home .campaign_boxes article:hover {
-        background: black;
-        color: white; }
-        .faculty_home .campaign_boxes article:hover a {
-          color: #508ac8; }
-      .faculty_home .campaign_boxes article div {
-        vertical-align: top;
-        padding: 30px 0;
-        width: 80%;
-        margin: 0 auto;
-        margin-left: 10%; }
-        .faculty_home .campaign_boxes article div h3 {
-          font-size: 30px;
-          line-height: 32px;
-          margin-bottom: 30px;
-          padding-bottom: 20px;
-          border-bottom: 4px solid #508ac8; }
-        .faculty_home .campaign_boxes article div ul {
-          line-height: 1.3em; }
-          .faculty_home .campaign_boxes article div ul li {
-            list-style: none;
-            padding: 15px 0;
-            list-style-position: inside; }
-            .faculty_home .campaign_boxes article div ul li h4 {
-              font-size: 18px;
-              line-height: 32px;
-              text-transform: uppercase; }
-  .faculty_home #campaign_header {
-    background: url(../img/campaign_header.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    .faculty_home #campaign_header h1, .faculty_home #campaign_header p {
-      text-align: center;
-      color: white; }
-  .faculty_home #alumni_header {
-    background: url(../img/alumni_header2.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .faculty_home #students_header {
-    background: url(../img/students_header.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    @media only screen and (max-width: 700px) {
-      .faculty_home #students_header {
-        height: 250px; } }
-    .faculty_home #students_header p {
-      color: white;
-      font-size: 16px;
-      text-align: left; }
-      .faculty_home #students_header p a {
-        text-decoration: underline; }
-      @media only screen and (min-width: 320px) and (max-width: 768px) {
-        .faculty_home #students_header p {
-          font-size: 14px; } }
-  .faculty_home .student_profiles {
-    position: relative; }
-    .faculty_home .student_profiles article {
-      width: 33.33333%;
-      float: left;
-      height: 400px;
-      position: relative;
-      background: white;
-      min-height: 30%;
-      overflow: hidden; }
-      @media (max-width: 1100px) {
-        .faculty_home .student_profiles article {
-          width: 50%; } }
-      @media (max-width: 700px) {
-        .faculty_home .student_profiles article {
-          width: 100%; } }
-      .faculty_home .student_profiles article a {
+      margin: 20px auto 0;
+      z-index: 2;
+      border: none;
+      background: none; }
+      .whylax_links #whylax {
+        position: relative;
+        margin: auto;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 100%;
-        position: absolute;
-        -webkit-transition: none;
-        -moz-transition: none;
-        transition: none;
-        background: none;
-        color: black; }
-        .faculty_home .student_profiles article a:hover {
-          background: black;
-          color: white;
-          -webkit-background-size: cover !important;
-          -moz-background-size: cover !important;
-          -o-background-size: cover !important;
-          background-size: cover !important; }
-          .faculty_home .student_profiles article a:hover .read_more {
-            line-height: 65px;
-            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), black);
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black); }
-          .faculty_home .student_profiles article a:hover .read_btn {
-            bottom: 0; }
-          .faculty_home .student_profiles article a:hover h5 {
-            color: white; }
-        .faculty_home .student_profiles article a div {
-          vertical-align: top;
-          padding: 5% 0;
-          width: 80%;
-          margin: 0 auto;
-          margin-left: 10%;
-          -webkit-transition: padding 0.45s cubic-bezier(0.23, 1, 0.32, 1);
-          -moz-transition: padding 0.45s cubic-bezier(0.23, 1, 0.32, 1);
-          transition: padding 0.45s cubic-bezier(0.23, 1, 0.32, 1); }
-          .faculty_home .student_profiles article a div h3 {
-            font-size: 40px;
-            line-height: 44px;
-            text-transform: none; }
-          .faculty_home .student_profiles article a div i {
-            display: none; }
-          .faculty_home .student_profiles article a div h5 {
-            font-size: 24px;
-            color: #508ac8;
-            line-height: 34px;
-            border-bottom: 4px solid #508ac8;
-            margin-bottom: 20px; }
-          .faculty_home .student_profiles article a div .read_btn {
-            position: absolute;
-            bottom: -100%;
-            width: 100%;
-            left: 0;
-            text-align: center;
-            background: #508ac8;
-            color: white;
-            padding: 10px 0;
-            -webkit-transition: bottom 0.25s;
-            -moz-transition: bottom 0.25s;
-            transition: bottom 0.25s; }
-            .faculty_home .student_profiles article a div .read_btn span {
-              color: black;
-              font-weight: 700; }
-      .faculty_home .student_profiles article .natalia {
-        background: url(../img/natalia_gomezlandero.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .natalia:hover {
-          background: url(../img/natalia_gomezlandero.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .natalia:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .natalia:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .natalia:hover div i {
-              display: inline; }
-      .faculty_home .student_profiles article .tyghe {
-        background: url(../img/tyghe_worthman.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .tyghe:hover {
-          background: url(../img/tyghe_worthman.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .tyghe:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .tyghe:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .tyghe:hover div i {
-              display: inline; }
-      .faculty_home .student_profiles article .michelle {
-        background: url(../img/michelle_ghun.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .michelle:hover {
-          background: url(../img/michelle_ghun.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .michelle:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .michelle:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .michelle:hover div i {
-              display: inline; }
-      .faculty_home .student_profiles article .julia {
-        background: url(../img/julia_ausloos.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .julia:hover {
-          background: url(../img/julia_ausloos.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .julia:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .julia:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .julia:hover div i {
-              display: inline; }
-      .faculty_home .student_profiles article .ronson {
-        background: url(../img/ronson_fox.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .ronson:hover {
-          background: url(../img/ronson_fox.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .ronson:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .ronson:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .ronson:hover div i {
-              display: inline; }
-      .faculty_home .student_profiles article .lateefah {
-        background: url(../img/lateefah_young.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .lateefah:hover {
-          background: url(../img/lateefah_young.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .lateefah:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .lateefah:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .lateefah:hover div i {
-              display: inline; }
-      .faculty_home .student_profiles article .jordan {
-        background: url(../img/jordan_alvarez.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .jordan:hover {
-          background: url(../img/jordan_alvarez.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .jordan:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .jordan:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .jordan:hover div i {
-              display: inline; }
-      .faculty_home .student_profiles article .maxie {
-        background: url(../img/maxie_thao.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .maxie:hover {
-          background: url(../img/maxie_thao.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .maxie:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .maxie:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .maxie:hover div i {
-              display: inline; }
-      .faculty_home .student_profiles article .elmer {
-        background: url(../img/elmer_harris.jpg) no-repeat -9999px -9999px; }
-        .faculty_home .student_profiles article .elmer:hover {
-          background: url(../img/elmer_harris.jpg) no-repeat center center; }
-          .faculty_home .student_profiles article .elmer:hover div {
-            padding-top: 45%; }
-            .faculty_home .student_profiles article .elmer:hover div p {
-              display: none; }
-            .faculty_home .student_profiles article .elmer:hover div i {
-              display: inline; }
+        height: auto; }
+        .whylax_links #whylax > a {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100px;
+          border-radius: 0; }
+        .whylax_links #whylax .ico_travel, .whylax_links #whylax .ico_gear, .whylax_links #whylax .ico_academic, .whylax_links #whylax .ico_mentor, .whylax_links #whylax .ico_leader {
+          top: 0;
+          left: 0; }
+        .whylax_links #whylax .ico_gear, .whylax_links #whylax .ico_mentor {
+          background: #2664a7; } }
 
-.ie8 header, .ie8 .people_boxes article {
-  background-size: cover;
-  -ms-behavior: url(backgroundsize.min.htc); }
+.lax_parallax {
+  width: 100%;
+  margin: 20px auto; }
+  .lax_parallax .scroll_bg {
+    height: 500px;
+    width: 100%;
+    position: relative; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .lax_parallax .scroll_bg {
+        height: 300px; } }
+  .lax_parallax .copy {
+    padding: 80px 0;
+    width: 100%;
+    position: relative;
+    text-align: center; }
+    .lax_parallax .copy h2 {
+      font-size: 26px;
+      margin: 10px auto; }
+    .lax_parallax .copy p {
+      max-width: 600px;
+      margin: 0 auto; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .lax_parallax .copy {
+        padding: 40px 0;
+        width: 90%;
+        margin: 0 auto; } }
+  .lax_parallax .travel_bg {
+    background: url(/img/travel_bg.jpg) no-repeat center center fixed;
+    background-size: cover; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .lax_parallax .travel_bg {
+        background: url(/img/travel_bg.jpg) no-repeat center center; } }
+  .lax_parallax .gear_bg {
+    background: url(/img/gear_bg.jpg) no-repeat center center fixed;
+    background-size: cover; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .lax_parallax .gear_bg {
+        background: url(/img/gear_bg.jpg) no-repeat center center; } }
+  .lax_parallax .mentorship_bg {
+    background: url(/img/mentorship_bg.jpg) no-repeat center center fixed;
+    background-size: cover; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .lax_parallax .mentorship_bg {
+        background: url(/img/mentorship_bg.jpg) no-repeat center center; } }
+  .lax_parallax .leadership_bg {
+    background: url(/img/leadership_bg.jpg) no-repeat center center fixed;
+    background-size: cover; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .lax_parallax .leadership_bg {
+        background: url(/img/leadership_bg.jpg) no-repeat center center; } }
+  .lax_parallax .academic_bg {
+    background: url(/img/academic_bg.jpg) no-repeat center center fixed;
+    background-size: cover; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .lax_parallax .academic_bg {
+        background: url(/img/academic_bg.jpg) no-repeat center center; } }
 
-.ie8 .student_profiles article a:hover {
-  background-size: cover;
-  -ms-behavior: url(backgroundsize.min.htc); }
+.touch .lax_parallax .travel_bg, .touch .lax_parallax .gear_bg, .touch .lax_parallax .mentorship_bg, .touch .lax_parallax .leadership_bg, .touch .lax_parallax .academic_bg {
+  background-attachment: scroll; }
 
-.ie8 .home {
-  background-size: cover;
-  -ms-behavior: url(backgroundsize.min.htc); }
+.people h1 {
+  text-align: center; }
+.people .grid3 .people_wrap {
+  width: 90%;
+  margin: 0 auto; }
+  .people .grid3 .people_wrap img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px; }
+  .people .grid3 .people_wrap span {
+    text-align: center;
+    border: 2px solid #508ac8;
+    color: #333333;
+    padding: 15px 0;
+    background: #efefef;
+    display: block; }
+.people .grid3 .quote {
+  font-style: italic; }
+.people .board_wrap {
+  background: #efefef;
+  padding: 20px 0 40px;
+  margin: 25px auto;
+  text-align: center; }
+.people .coaches {
+  text-align: center; }
 
-.getinvolved .banner {
+.get_involved .banner {
   width: 100%;
   background: url(/img/donate_banner.jpg) no-repeat;
   background-size: cover;
   padding: 50px 0;
   color: white;
   background-position: center bottom; }
-  .getinvolved .banner h3 {
+  .get_involved .banner h3 {
     width: 50%;
     font-size: 38px;
     font-weight: 100; }
-  .getinvolved .banner a {
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .get_involved .banner h3 {
+        width: 100%;
+        font-size: 24px; } }
+  .get_involved .banner a {
     display: inline-block;
     margin-top: 20px; }
-.getinvolved .grid4 {
+.get_involved .grid4 {
   text-align: right;
   padding-top: 50px; }
+
+.involved_cta {
+  margin: 20px auto; }
+  .involved_cta .grid3 {
+    padding: 30px 0;
+    text-align: center; }
+    .involved_cta .grid3 a {
+      color: #333333;
+      font-size: 18px;
+      border: 2px solid #508ac8;
+      width: 90%;
+      padding: 25px 60px 25px 100px;
+      line-height: 76px;
+      width: 160px;
+      position: relative;
+      background: #efefef; }
+      .involved_cta .grid3 a:before {
+        font-size: 30px;
+        color: white;
+        background: #508ac8;
+        position: absolute;
+        width: 80px;
+        border-right: 2px solid #508ac8;
+        left: 0;
+        -webkit-transition: background 0.3s ease;
+        -moz-transition: background 0.3s ease;
+        transition: background 0.3s ease; }
+      .involved_cta .grid3 a:hover:before {
+        background: transparent;
+        color: #508ac8; }
+
+#volunteer_events iframe {
+  width: 100%;
+  height: auto;
+  min-height: 900px;
+  font-family: "Open Sans", sans-serif; }
+#volunteer_events .event_wrap {
+  background: #efefef;
+  color: #333333; }
+  #volunteer_events .event_wrap h1, #volunteer_events .event_wrap a {
+    margin: 20px 30px;
+    display: block;
+    color: #999999; }
+  #volunteer_events .event_wrap h1 {
+    color: #888888; }
+  #volunteer_events .event_wrap a {
+    margin-bottom: 40px;
+    color: #333333; }
+    #volunteer_events .event_wrap a p {
+      line-height: 12px; }
+    #volunteer_events .event_wrap a span {
+      border: 2px solid #508ac8;
+      color: #508ac8;
+      padding: 5px 15px;
+      margin: 10px 0 0;
+      display: inline-block; }
+    #volunteer_events .event_wrap a:hover span {
+      background: #508ac8;
+      color: white; }
+  #volunteer_events .event_wrap .contact {
+    width: 100%;
+    padding: 25px 0 10px;
+    text-align: center;
+    margin: 10px auto 0;
+    background: white; }
+    #volunteer_events .event_wrap .contact a {
+      margin: 0; }
+    #volunteer_events .event_wrap .contact ul {
+      font-size: 14px; }

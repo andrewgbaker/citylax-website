@@ -48,11 +48,11 @@
 		<div class="container clearfix nav_wrap">
 			<a href="/" class="logo"></a>
 			<ul class="main_nav">
-				<li><a href="/get-involved/">Get Involved</a></li>
-				<li><a href="/about/" class="facts">About</a></li>
-				<li><a href="#">People</a></li>
-				<li><a href="#">Programs</a></li>
-				<li class="last"><a href="#">Blog</a></li>
+				<li <?php if ($thisPage=="get_involved") echo " id=\"active_nav\""; ?>><a href="/get-involved/">Get Involved</a></li>
+				<li <?php if ($thisPage=="about") echo " id=\"active_nav\""; ?>><a href="/about/" class="facts">About</a></li>
+				<li <?php if ($thisPage=="people") echo " id=\"active_nav\""; ?>><a href="/people/">People</a></li>
+				<li <?php if ($thisPage=="programs") echo " id=\"active_nav\""; ?>><a href="#">Programs</a></li>
+				<li <?php if ($thisPage=="blog") echo " id=\"active_nav\""; ?> class="last"><a href="#">Blog</a></li>
 			</ul>
 		</div>
 	</nav>

@@ -2,7 +2,7 @@
 	$pageTitle = 'City Lax Denver';
 	$pageDescription="";
 	$pageKeywords = "";
-	$thisPage = "getinvolved";
+	$thisPage = "get_involved";
 	include("../includes/header.php"); 
 ?>			  
 	<section class="banner">
@@ -12,64 +12,59 @@
 		</div>
 	</section>
 	
-	<div class="impact_wrap">
-		<section class="impact container clearfix">
-			<div class="grid4">
-				<h3><span>1000+</span><br />youth in underserved Denver neighborhoods introduced to the lacrosse</h3>
-			</div>
-			<div class="grid4">
-				<h3><span>53</span><br />Denver schools involved with CityLax</h3>
-			</div>
-			<div class="grid4">
-				<h3><span>80% +</span><br />of city lax athletes feel the program helps improve their grades and stay focused</h3>
-			</div>
-		</section>
-		<section class="container clearfix">
-			<div class="grid6">
-				<h3><span>85% +</span><br />participant retention rate</h3>
-			</div>
-			<div class="grid6">
-				<h3><span>225 +</span><br />full time CityLax participants</h3>
-			</div>
-			</div>
-		</section>
-	</div>
+	<section class="involved_cta clearfix container">
+		<div class="grid3">
+			<a href="#volunteer_events" class="entypo-users">Volunteer</a>
+		</div>
+		<div class="grid3">
+			<a href="#" class="entypo-mail">Donate</a>
+		</div>
+		<div class="grid3">
+			<a href="#events" class="entypo-calendar">Events</a>
+		</div>
+		<div class="grid3">
+			<a href="#mc_embed_signup" class="entypo-check">Newsletter</a>
+		</div>
+		</div>
+	</section>
 	
-	<div class="container clearfix share_newsletter">
-		<div class="grid4">
-		<div class="share">
-			<section class="share_wrap">
-				<input type="checkbox" class="checkbox" id="share">
-					<label for="share" class="label" aria-hidden="true" data-icon="S"><br /><p>Share this website</p></label>
-					<section class="social">
-				    <ul>
-					      <li><a aria-hidden="true" data-icon="t" class="tweet" href=""></a></li>
-					      <li><a aria-hidden="true" data-icon="f" class="fb_share" href=""></a></li>
-					      <li><a aria-hidden="true" data-icon="m" class="mail_share" href=""></a></li>
-				    </ul>
-			  </section>
-		  </section>
+	<section class="clearfix container" id="volunteer_events">
+		<div class="grid6">
+		<h1>Volunteer Sign Up Form</h1>
+			<iframe src="https://docs.google.com/forms/d/1eWS5lvZ8vUSChmXBiPR3elZcF_hAuwTeZZ-165IeB8o/viewform?embedded=true&ttl=0&tc=333333&f=Open Sans" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 		</div>
+		<div class="grid6 event_wrap" id="events">
+			<h1>Upcoming Events</h1>
+			<a href="#">
+				<div>
+					<h2>Denver City Lax Mile High Gala</h2>
+					<p>February 26th, 2014</p>
+					<p>Sports Authority Field, Denver CO</p>
+					<span>Sign Up</span>
+				</div>
+			</a>
+			<a href="#">
+				<div>
+					<h2>Denver City Lax Dash</h2>
+					<p>At the Valentines 5k</p>
+					<p>Sunday February 9th, 2014</p>
+					<p>Washington Park, Denver CO</p>
+					<span>Sign Up</span>
+				</div>
+			</a>
+			<div class="contact">
+				<h3>Contact</h3>
+				<ul>
+					<li>Denver City Lax
+					<li>1106 Columbine Street</li>
+					<li>Denver, CO  80206</li>
+					<li><a href="tel:720-837-4947">720-837-4947</a></li>
+					<li><a href="mailto:info@citylaxdenver.org">info@citylaxdenver.org</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="grid8">
-		<div id="mc_embed_signup">
-			<h3>Stay in touch</h3>
-			<form form action="http://DenverCityLax.us4.list-manage1.com/subscribe/post?u=d317a2bcb9c67e13bbae20f1e&amp;id=e31c51b064" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<fieldset>	
-					<div class="mc-field-group">
-						<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="ENTER EMAIL TO SIGNUP FOR OUR NEWSLETTER">
-						<div class="submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-					</div>
-					<div id="mce-responses">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>
-				</fieldset>
-			</form>
-		</div>
-		</div>
-	</div>
-
+	</section>
+	
 	
 	
 <?php include("../includes/footer.php"); ?> 

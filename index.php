@@ -7,17 +7,15 @@
 	<div class="flex-container">
 		<div class="flexslider">
 			<ul class="slides">
-			  <li>
-			  	<img class="slider_bg" src="img/slider1.jpg" alt="" />
+			  <li class="slider1">
 			    <p class="flex-caption">
 			    	<span class="vid_wrap">
 			    		<iframe id="player_1" src="//player.vimeo.com/video/35224749?title=0&amp;byline=0&amp;portrait=0" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			    	</span>
 			    </p>
 			  </li>
-			  <li>
+			  <li class="slider2">
 			  	<a href="#">
-				    <img class="slider_bg" src="img/slider4.jpg" alt="" />
 				    <div class="flex-caption">
 				    	<h1>Why Lacrosse?</h1>
 				    	<p>See how the game of lacrosse has helped enrich the lives of our participants.</p>
@@ -25,9 +23,8 @@
 				    </div>
 				</a>
 			  </li>
-			  <li>
-				<a href="#">
-				    <img class="slider_bg" src="img/slider0.jpg" alt="" />
+			  <li class="slider3">
+				<a href="/get-involved/">
 				    <div class="flex-caption">
 				    	<h1>Get Involved</h1>
 				    	<p>Coaching / Mentorship / Events / Donations / Equipment</p>
@@ -35,9 +32,8 @@
 				    </div>
 				</a>
 			  </li>
-			  <li>
+			  <li class="slider4">
 			  	<a href="#">
-			    	<img class="slider_bg" src="img/slider3.jpg" alt="" />
 			    	<div class="flex-caption">
 			    		<h1>CityLax Gala 2014</h1>
 			    		<span class="slider_cta" href="#">tickets and info</span>
@@ -50,25 +46,25 @@
 			  
 	<section class="home_cta container clearfix">
 		<div class="grid3">
-			<a href="#">
+			<a href="/about/">
 				<img src="img/photos_cta.jpg">
-				<p>Photos & Videos</p>
+				<p>Why Lacrosse?</p>
 			</a>
 		</div>
 		<div class="grid3">
-			<a href="#">
+			<a href="/get-involved/">
 				<img src="img/donate_cta.jpg">
 				<p>Get Involved</p>
 			</a>
 		</div>
 		<div class="grid3">
-			<a href="#">
+			<a href="/people/">
 				<img src="img/people_cta.jpg">
 				<p>Meet CityLax</p>
 			</a>
 		</div>
 		<div class="grid3">
-			<a href="#">
+			<a href="/get-involved/#events">
 				<img src="img/news_cta.jpg">
 				<p>Events</p>
 			</a>
@@ -84,21 +80,24 @@
 				<h3><span>53</span><br />Denver schools involved with CityLax</h3>
 			</div>
 			<div class="grid4">
-				<h3><span>80% +</span><br />of city lax athletes feel the program helps improve their grades and stay focused</h3>
+				<h3><span>28,000 +</span><br />hours of coaching, mentoring, and youth development dedicated in 2013</h3>
 			</div>
 		</section>
 		<section class="container clearfix">
-			<div class="grid6">
+			<div class="grid4">
 				<h3><span>85% +</span><br />participant retention rate</h3>
 			</div>
-			<div class="grid6">
+			<div class="grid4">
 				<h3><span>225 +</span><br />full time CityLax participants</h3>
+			</div>
+			<div class="grid4">
+				<h3><span>80% +</span><br />of city lax athletes feel the program helps improve their grades and stay focused</h3>
 			</div>
 		</section>
 	</div>
 	
 	<div class="container clearfix share_newsletter">
-		<div class="grid4">
+		<div class="grid12">
 		<div class="share">
 			<section class="share_wrap">
 				<input type="checkbox" class="checkbox" id="share">
@@ -113,23 +112,7 @@
 		  </section>
 		</div>
 		</div>
-		<div class="grid8">
-		<div id="mc_embed_signup">
-			<h3>Stay in touch</h3>
-			<form form action="http://DenverCityLax.us4.list-manage1.com/subscribe/post?u=d317a2bcb9c67e13bbae20f1e&amp;id=e31c51b064" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<fieldset>	
-					<div class="mc-field-group">
-						<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="ENTER EMAIL TO SIGNUP FOR OUR NEWSLETTER">
-						<div class="submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-					</div>
-					<div id="mce-responses">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>
-				</fieldset>
-			</form>
-		</div>
-		</div>
+		
 	</div>
 
 	

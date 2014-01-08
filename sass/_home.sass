@@ -51,10 +51,32 @@ html[xmlns] .slides
 	overflow: hidden
 	zoom: 1
 	max-width: 100%
-	@media only screen and (min-width: 320px) and (max-width: 768px)
-		margin: 75px auto 0
 	li
 		height: 400px
+	.slider1
+		background: url(/img/slider0.jpg) no-repeat center center
+		background-size: cover
+	.slider2
+		background: url(/img/slider4.jpg) no-repeat center center
+		background-size: cover
+	.slider3
+		background: url(/img/slider1.jpg) no-repeat center center
+		background-size: cover
+	.slider4
+		background: url(/img/CityLaxGala_Slider.jpg) no-repeat center center
+		background-size: cover
+		.flex-caption
+			bottom: 40%
+	@media only screen and (min-width: 320px) and (max-width: 768px)
+		margin: 15px auto 25px
+		height: 300px
+		li
+			height: 300px
+		.slider1
+			.flex-caption
+				bottom: 10%
+				width: 70%
+				left: 15%
 
 .flex-viewport
 	max-height: 400px
@@ -156,23 +178,28 @@ html[xmlns] .slides
 	@media only screen and (max-width: 500px)
 		bottom: 3%
 		top: auto
-	img
-		margin: 0 auto
-		text-align: center
-		display: block
-		width: 377px
-		@media only screen and (max-width: 500px)
-			width: 200px
 	.vid_wrap
 		max-width: 600px
 		display: block
+	p
+		margin: 5px auto
+	h1
+		margin: 5px auto
 	.slider_cta
 		display: inline-block
 		padding: 5px 15px
 		border: 2px solid white
-		margin: 15px 0
+		margin: 10px 0
+	@media only screen and (min-width: 320px) and (max-width: 767px)	
+		bottom: 30%		
+		text-align: center
+		.slider_cta
+			margin: 5px 0
+		h1
+			margin: 5px auto
 .home_cta
-	div
+	.grid3
+		margin: 10px auto
 		a
 			width: 80%
 			margin: 0 auto
@@ -190,8 +217,15 @@ html[xmlns] .slides
 				z-index: 3
 				position: relative
 				text-transform: uppercase
+				@include transition (background .5s ease)
 			&:hover
 				-webkit-border-radius: 15px
+				border: 5px solid $citylax_blue
+				p
+					background: $citylax_blue
+	@media only screen and (min-width: 320px) and (max-width: 767px)
+		margin: 20px auto
+				
 .impact_wrap
 	width: 100%
 	margin: 40px auto
@@ -299,43 +333,6 @@ html[xmlns] .slides
 			li a.mail_share
 				background: #999999
 				padding: 12px 0
-	#mc_embed_signup
-		margin: 25px 0 45px
-		h3
-			color: $dark_gray
-		form
-			margin-top: 23px
-			input
-				width: 100%
-				padding: 10px 0
-				color: $black
-				background: rgba(255,255,255,.5)
-				border: 1px solid $black
-				text-align: center
-				font-family: 'Source Sans Pro'
-				font-size: 13px
-				display: inline
-				max-width: 400px
-			::-webkit-input-placeholder
-				color: $black
-			:-moz-placeholder
-				color: $black
-			::-moz-placeholder
-				color: $black
-			:-ms-input-placeholder
-				color: $black
-			.submit
-				display: inline
-				.btn
-					padding: 10px 15px
-					background: #999999
-					border: 1px solid #333333
-					color: $white
-					display: inline-block
-					text-transform: uppercase
-					font-size: 13px
-					letter-spacing: 2px
-					max-width: 110px
 	
 					
 			
