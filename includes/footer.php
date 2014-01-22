@@ -4,7 +4,7 @@
 		
 	<footer>
 		<div class="container clearfix">
-			<div class="grid6">
+			<div class="grid3">
 				<section>
 					<h3>Contact</h3>
 					<ul>
@@ -16,6 +16,16 @@
 					</ul>
 				</section>
 				<section>
+					<ul class="social_footer">
+						<li><a href="#" aria-hidden="true" data-icon="f"></a></li>
+						<li><a href="#" aria-hidden="true" data-icon="t"></a></li>
+						<li><a href="#" aria-hidden="true" data-icon="i"></a></li>
+						<li><a href="#" aria-hidden="true" data-icon="y"></a></li>
+					</ul>
+				</section>
+			</div>
+			<div class="grid3">
+				<section>
 					<h3>Menu</h3>
 					<ul>
 						<li><a href="#">Get Involved</a></li>
@@ -25,7 +35,6 @@
 					</ul>
 				</section>
 			</div>
-			
 			<div class="grid6">
 				<div id="mc_embed_signup">
 					<h3>Stay in touch</h3>

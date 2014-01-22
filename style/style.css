@@ -8,8 +8,8 @@
 /* Dimensions */
 @font-face {
   font-family: 'social_icons';
-  src: url("socials_3/icomoon.eot");
-  src: url("socials_3/icomoon.eot?#iefix") format("embedded-opentype"), url("socials_3/icomoon.woff") format("woff"), url("socials_3/icomoon.ttf") format("truetype"), url("socials_3/icomoon.svg#icomoon") format("svg");
+  src: url("socials_3/citylax.eot");
+  src: url("socials_3/citylax.eot?#iefix") format("embedded-opentype"), url("socials_3/citylax.woff") format("woff"), url("socials_3/citylax.ttf") format("truetype"), url("socials_3/citylax.svg#citylax") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -130,16 +130,17 @@ h3 {
 
 .btn {
   padding: 5px 15px;
-  border: 2px solid white;
+  border: 2px solid #f87807;
   margin: 15px 0;
   display: inline-block;
-  background: transparent;
+  background: white;
+  color: #f87807;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out; }
   .btn:hover {
-    background: white;
-    color: #333333; }
+    background: transparent;
+    color: white; }
 
 nav {
   position: relative;
@@ -160,7 +161,7 @@ nav {
     @media only screen and (min-width: 320px) and (max-width: 768px) {
       nav a.logo {
         top: 20px;
-        width: 180;
+        width: 180px;
         height: 60px;
         background-size: 180px 60px;
         left: 20px; } }
@@ -225,7 +226,7 @@ nav {
   position: absolute;
   top: 16px;
   left: 0;
-  background: url(../img/cudenver_logo_ie.png) no-repeat;
+  background: url(../img/citylax_logo.png) no-repeat;
   width: 300px;
   height: 45px; }
 
@@ -271,20 +272,26 @@ footer {
   background: rgba(0, 0, 0, 0.2);
   height: auto;
   padding: 20px 0;
-  margin: 20px auto 0; }
+  margin: 50px auto 0; }
   footer .container {
     margin-top: 10px; }
-    footer .container section {
-      width: 30%;
-      float: left; }
-      footer .container section h3 {
-        color: white;
-        margin-bottom: 10px; }
-      footer .container section li {
-        color: black;
-        font-size: 13px; }
-        footer .container section li a {
-          color: black; }
+    footer .container section h3 {
+      color: white;
+      margin-bottom: 10px; }
+    footer .container section li {
+      color: black;
+      font-size: 13px; }
+      footer .container section li a {
+        color: black; }
+  footer .social_footer {
+    margin-top: 20px; }
+    footer .social_footer li {
+      display: inline;
+      margin: 0 10px; }
+      footer .social_footer li:first-child {
+        margin-left: 0; }
+      footer .social_footer li a:before {
+        font-size: 24px; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     footer {
       position: relative;
@@ -403,10 +410,10 @@ html[xmlns] .slides {
     background: url(/img/slider0.jpg) no-repeat center center;
     background-size: cover; }
   .flexslider .slider2 {
-    background: url(/img/slider4.jpg) no-repeat center center;
+    background: url(/img/girl_banner.jpg) no-repeat center center;
     background-size: cover; }
   .flexslider .slider3 {
-    background: url(/img/slider1.jpg) no-repeat center center;
+    background: url(/img/slider5.jpg) no-repeat center center;
     background-size: cover; }
   .flexslider .slider4 {
     background: url(/img/CityLaxGala_Slider.jpg) no-repeat center center;
@@ -535,7 +542,8 @@ html[xmlns] .slides {
   .flex-caption p {
     margin: 5px auto; }
   .flex-caption h1 {
-    margin: 5px auto; }
+    margin: 5px auto;
+    color: white; }
   .flex-caption .slider_cta {
     display: inline-block;
     padding: 5px 15px;
@@ -589,6 +597,9 @@ html[xmlns] .slides {
   padding: 40px 0;
   background: url(../img/impact_bg.jpg) no-repeat center center;
   background-size: cover; }
+  .impact_wrap section {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6); }
   .impact_wrap h3 {
     margin: 30px 20px;
     text-align: center;
@@ -627,7 +638,8 @@ html[xmlns] .slides {
       line-height: 24px;
       display: block;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      color: #dadada; }
       .share_newsletter .share_wrap .label p {
         padding: 10px 15px;
         background: #508ac8;
@@ -750,6 +762,9 @@ html[xmlns] .slides {
       opacity: 1; }
       .whylax_links #whylax > a:hover {
         background: #333333; }
+      .whylax_links #whylax > a:before {
+        font-size: 30px;
+        line-height: 2; }
       .whylax_links #whylax > a:after {
         font-family: "Oswald";
         position: absolute;
@@ -889,6 +904,10 @@ html[xmlns] .slides {
     padding: 15px 0;
     background: #efefef;
     display: block; }
+    .people .grid3 .people_wrap span h5 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 14px; }
 .people .grid3 .quote {
   font-style: italic; }
 .people .board_wrap {
@@ -896,8 +915,22 @@ html[xmlns] .slides {
   padding: 20px 0 40px;
   margin: 25px auto;
   text-align: center; }
+  .people .board_wrap .people_wrap {
+    vertical-align: top;
+    width: 260px;
+    height: 260px;
+    background: white;
+    margin: 10px 10px 20px;
+    display: inline-block; }
+    .people .board_wrap .people_wrap img {
+      width: 100%;
+      max-width: 100%; }
+    .people .board_wrap .people_wrap p {
+      color: #333333;
+      padding: 0 8px; }
 .people .coaches {
-  text-align: center; }
+  text-align: center;
+  margin: 10px auto 30px; }
 
 .get_involved .banner {
   width: 100%;
@@ -966,7 +999,7 @@ html[xmlns] .slides {
   #volunteer_events .event_wrap h1 {
     color: #888888; }
   #volunteer_events .event_wrap a {
-    margin-bottom: 40px;
+    margin: 60px auto;
     color: #333333; }
     #volunteer_events .event_wrap a p {
       line-height: 12px; }
@@ -979,6 +1012,9 @@ html[xmlns] .slides {
     #volunteer_events .event_wrap a:hover span {
       background: #508ac8;
       color: white; }
+    #volunteer_events .event_wrap a img {
+      width: 100%;
+      max-width: 100%; }
   #volunteer_events .event_wrap .contact {
     width: 100%;
     padding: 25px 0 10px;

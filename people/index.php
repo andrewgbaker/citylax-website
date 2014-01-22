@@ -26,9 +26,9 @@
 		    		<h5>Program Director</h5>
 				</span>
 				<img src="/img/ben_allison.jpg"  alt="Rod Allison"/>
-	    		<p>Born and raised in Denver.  Graduated from East High School, and then attended Hampden-Sydney College & The University of North Carolina - Chapel Hill.  Developed blue print for Denver City Lax while attending high school, and has been working full time with Denver City Lax since graduation from college.</p>
+	    		<p>Born and raised in Denver.  Graduated from East High School, and then attended Hampden-Sydney College & The University of North Carolina - Chapel Hill.  Developed blue print for Denver City Lax while attending high school, and has been working full time with Denver City Lax since graduating from college..</p>
 	
-	<p class="quote">“Lacrosse allowed me to travel the country, meet many of my best friends, and attend college.  I am passionate about Denver City Lax because I’ve seen the sport offer our participants those same experiences, and without City Lax those opportunities would not have existed for many of them.”</p>
+	<p class="quote">“Lacrosse allowed me to travel the country, meet many of my best friends, and attend college.  I am passionate about Denver City Lax because I’ve seen the sport and our organization offer participants the opportunity to share those same experiences.”</p>
 			</div>
 		</div>
 		<div class="grid3">
@@ -37,40 +37,57 @@
 					<h3>Eric Law</h3>
 		    		<h5>Program Manager</h5>
 				</span>
-				<img src="/img/eric_law.jpg"  alt="Rod Allison"/>
+				<img src="/img/eric_law2.jpg"  alt="Rod Allison"/>
 	    		<p>A Colorado native, Eric has been playing lacrosse in the state since 1997 when he was in first grade. Graduated from Arapahoe High School and attended Salisbury University & University of Denver where he played under two of the greatest coaches in NCAA history - Jim Berkman and Bill Tierney. Eric plays professional lacrosse in the outdoor and indoor leagues for the Denver Outlaws and Toronto Rock.</p>
 	
-	<p class="quote">“Colorado lacrosse is so much of who I am and there is no better feeling being part of the rise of the sport over the years.  I am passionate about Denver City Lax because I want to share the same experiences and give back to the sport that has shaped me into the man that I am today.  Lacrosse has given me endless amounts of opportunities and I want to share those opportunities with kids who never thought it was imaginable.”</p>
+	<p class="quote">“Colorado lacrosse is so much of who I am.  I am passionate about Denver City Lax because I want to share the same experiences and give back to the sport that has shaped me into the man that I am today.  Lacrosse has given me endless amounts of opportunities and I want to share those opportunities with kids who never thought it was imaginable.”</p>
 			</div>
 		</div>
 		<div class="grid3">
 			<div class="people_wrap">
 				<span>
 					<h3>Dillon Roy</h3>
-		    		<h5>Volunteer</h5>
+		    		<h5>Volunteer & Program Development</h5>
 				</span>
 				<img src="/img/dillon_roy.jpg"  alt="Rod Allison"/>
-	    		<p>A Colorado native, Eric has been playing lacrosse in the state since 1997 when he was in first grade. Graduated from Arapahoe High School and attended Salisbury University & University of Denver where he played under two of the greatest coaches in NCAA history - Jim Berkman and Bill Tierney.</p>
+	    		<p>Graduated from East High School and attended the University of Denver where he was a team captain and academic All-American.  Since graduating, he has spent a substantial amount of time volunteering both on and off the lacrosse field.  Dillon currently plays for the Denver Outlaws and Team Canada.</p>
 	
-	<p class="quote">“Colorado lacrosse is so much of who I am and there is no better feeling being part of the rise of the sport over the years.  I am passionate about Denver City Lax because I want to share the same experiences and give back to the sport that has shaped me into the man that I am today.  Lacrosse has given me endless amounts of opportunities and I want to share those opportunities with kids who never thought it was imaginable.”</p>
+	<p class="quote">“I choose to spend my time with Denver City Lax because I support their effort to remove the financial barrier to the sport.  I have played at the highest levels of lacrosse, and believe that the single most important thing I can do is to focus on introducing the game to new kids.”</p>
 			</div>
 		</div>
 	</section>
 	
 	<div class="board_wrap">
 		<section class="container clearfix">
-			<h1>- Board -</h1>
-			<div class="grid12">
-				<ul>
-					<li>Rod Allison - Denver City Lax Executive Director</li>
-					<li>Matt Brown - University of Denver Men’s Lacrosse Associate Head Coach</li>
-					<li>Mac Freeman - Denver Broncos Senior Vice President of Business Development & Denver Outlaws President</li>
-					<li>David Hallman - Hiawatha Davis Recreation Manager</li>
-					<li>John Lay - </li>
-					<li>Dillon Roy - Boom Town Lacrosse Co-Founder & Denver Outlaws </li>
-					<li>Bill Tierney - University of Denver Men’s Lacrosse Head Coach </li>
-				</ul>
-	    	</div>
+			<h1>- Board of Directors -</h1>
+				<div class="people_wrap">
+					<img src="/img/bill_tierney.jpg"  alt="Bill Tierney"/>
+	    			<p><strong>Bill Tierney</strong> <br />University of Denver Men’s Lacrosse Head Coach</p>
+				</div>
+				<div class="people_wrap">
+					<img src="/img/matt_brown.jpg"  alt="Matt Brown"/>
+	    			<p><strong>Matt Brown</strong> <br />University of Denver Men’s Lacrosse Associate Head Coach</p>
+	    		</div>
+				<div class="people_wrap">
+					<img src="/img/mac_freeman.jpg"  alt="Mac Freeman"/>
+	    			<p><strong>Mac Freeman</strong> <br />Denver Broncos Senior Vice President of Business Development & Denver Outlaws President</p>
+				</div>
+				<div class="people_wrap">
+					<img src="/img/rod_allison2.jpg"  alt="David Hallman"/>
+	    			<p><strong>David Hallman</strong> <br />Hiawatha Davis Recreation Manager</p>
+				</div>
+				<div class="people_wrap">
+					<img src="/img/john_lay.jpg"  alt="John Lay"/>
+	    			<p><strong>John Lay</strong> <br />Past President of Denver Metro Chamber of Commerce</p>
+				</div>
+				<div class="people_wrap">
+					<img src="/img/dillon_roy.jpg"  alt="Dillon Roy"/>
+	    			<p><strong>Dillon Roy</strong> <br />Boom Town Lacrosse Co-Founder & Denver Outlaws</p>
+	    		</div>
+				<div class="people_wrap">
+					<img src="/img/rod_allison2.jpg"  alt="Rod Allison"/>
+	    			<p><strong>Rod Allison</strong> <br />Denver City Lax Executive Director</p>
+				</div>
 	    </section>
     </div>
 	<section class="container clearfix coaches">
@@ -86,6 +103,7 @@
 				<li>Ethan Demby</li>
 				<li>Geoff Sweezy</li>
 				<li>Greg Litvak</li>
+				<li>Wyatt Autterson</li>
 			</ul>
     	</div>
 		<div class="grid4">
@@ -99,6 +117,7 @@
 				<li>Meg Cloutman</li>
 				<li>Mike Koster</li>
 				<li>Myya Bonner</li>
+				<li>Andrew Baker</li>
 			</ul>
     	</div>
     	<div class="grid4">
@@ -117,42 +136,36 @@
     	</div>
 	</section>
 	
-	
-				
-	<div class="container clearfix share_newsletter">
+	<section class="container clearfix coaches">
+		<h1>- Foundations -</h1>
 		<div class="grid4">
-		<div class="share">
-			<section class="share_wrap">
-				<input type="checkbox" class="checkbox" id="share">
-					<label for="share" class="label" aria-hidden="true" data-icon="S"><br /><p>Share this website</p></label>
-					<section class="social">
-				    <ul>
-					      <li><a aria-hidden="true" data-icon="t" class="tweet" href=""></a></li>
-					      <li><a aria-hidden="true" data-icon="f" class="fb_share" href=""></a></li>
-					      <li><a aria-hidden="true" data-icon="m" class="mail_share" href=""></a></li>
-				    </ul>
-			  </section>
-		  </section>
-		</div>
-		</div>
-		<div class="grid8">
-		<div id="mc_embed_signup">
-			<h3>Stay in touch</h3>
-			<form form action="http://DenverCityLax.us4.list-manage1.com/subscribe/post?u=d317a2bcb9c67e13bbae20f1e&amp;id=e31c51b064" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<fieldset>	
-					<div class="mc-field-group">
-						<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="ENTER EMAIL TO SIGNUP FOR OUR NEWSLETTER">
-						<div class="submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-					</div>
-					<div id="mce-responses">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>
-				</fieldset>
-			</form>
-		</div>
-		</div>
-	</div>
+			<ul>
+				<li>Daniels Fund</li>
+				<li>Donner Foundation</li>
+				<li>Barton Family Foundation</li>
+				<li>Beaird Family Foundation</li>
+				<li>Caulkins Family Foundation</li>
+			</ul>
+    	</div>
+		<div class="grid4">
+			<ul>
+				<li>Colorado Lacrosse Foundation</li>
+				<li>The Kelley Foundation</li>
+				<li>Lacrosse Outreach Foundation</li>
+				<li>Mikel T. Olson Foundation</li>
+				<li>Ronald and Carol Moore Family Foundation</li>
+			</ul>
+    	</div>
+    	<div class="grid4">
+			<ul>
+				<li>OAK Foundation</li>
+				<li>The Leo S. Walsh Foundation</li>
+				<li>The Colin L. Cassidy Memorial Fund</li>
+				<li>The Owen Family Foundation</li>
+			</ul>
+    	</div>
+	</section>
 	
+		
 	
 <?php include("../includes/footer.php"); ?> 

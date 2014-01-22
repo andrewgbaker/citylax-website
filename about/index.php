@@ -19,11 +19,11 @@
     	<div class="grid8">
     		<section class="whylax_links">
 				<div id="whylax">
-					<a href="#travel" class="entypo-flight ico_travel ico_in"></a>
-					<a href="#gear" class="entypo-mail ico_gear ico_in"></a>
-					<a href="#academic" class="entypo-user ico_academic ico_in"></a>
-					<a href="#mentorship" class="entypo-code ico_mentor ico_in"></a>
-					<a href="#leadership" class="entypo-home ico_leader ico_in"></a>
+					<a href="#travel" class="ico_travel ico_in" aria-hidden="true" data-icon="T"></a>
+					<a href="#gear" class="ico_gear ico_in" aria-hidden="true" data-icon="E"></a>
+					<a href="#academic" class="ico_academic ico_in" aria-hidden="true" data-icon="A"></a>
+					<a href="#mentorship" class="ico_mentor ico_in" aria-hidden="true" data-icon="M"></a>
+					<a href="#leadership" class="ico_leader ico_in" aria-hidden="true" data-icon="L"></a>
 				</div>
 			</section>
 		</div>
@@ -47,7 +47,7 @@
 		</div>
 		<div id="mentorship" class="mentorship_bg scroll_bg"></div>
 		<div class="copy">
-			<h2>- Mentorship -</h2>
+			<h2>- Positive Coaches and Mentorship -</h2>
 			<p>Provide experienced coaches and positive adult role models to help develop positive character traits and goal setting.</p>
 		</div>
 		<div id="leadership" class="leadership_bg scroll_bg"></div>

@@ -31,7 +31,7 @@
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="/style/style.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<script src="/js/libs/jquery.1.8.2.min.js"></script>
 	
 	<link rel="icon" type="image/ico" href="favicon.ico" />
@@ -40,6 +40,19 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47206103-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </head>
 <body>
@@ -51,8 +64,8 @@
 				<li <?php if ($thisPage=="get_involved") echo " id=\"active_nav\""; ?>><a href="/get-involved/">Get Involved</a></li>
 				<li <?php if ($thisPage=="about") echo " id=\"active_nav\""; ?>><a href="/about/" class="facts">About</a></li>
 				<li <?php if ($thisPage=="people") echo " id=\"active_nav\""; ?>><a href="/people/">People</a></li>
-				<li <?php if ($thisPage=="programs") echo " id=\"active_nav\""; ?>><a href="#">Programs</a></li>
-				<li <?php if ($thisPage=="blog") echo " id=\"active_nav\""; ?> class="last"><a href="#">Blog</a></li>
+				<li <?php if ($thisPage=="programs") echo " id=\"active_nav\""; ?>><a href="#">Teams</a></li>
+				<li <?php if ($thisPage=="blog") echo " id=\"active_nav\""; ?> class="last"><a href="http://blog.citylaxdenver.org">Blog</a></li>
 			</ul>
 		</div>
 	</nav>
