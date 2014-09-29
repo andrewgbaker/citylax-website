@@ -28,6 +28,9 @@
 	height: 467px
 	margin: 0 auto
 	z-index: 2
+	-webkit-box-shadow: 0 12px 9px -9px rgb(83, 83, 83)
+	-moz-box-shadow: 0 12px 9px -9px rgb(83, 83, 83)
+	box-shadow: 0 12px 9px -9px rgb(83, 83, 83)
 	border:
 		bottom: 10px solid $citylax_blue
 	background: url(/img/whylax_center.jpg) no-repeat bottom center
@@ -148,27 +151,27 @@
 			margin: 0 auto
 	.travel_bg
 		background: url(/img/travel_bg.jpg) no-repeat center center fixed
-		background-size: cover
+		@include bgCover()
 		@media only screen and (min-width: 320px) and (max-width: 767px)
 			background: url(/img/travel_bg.jpg) no-repeat center center
 	.gear_bg
 		background: url(/img/gear_bg.jpg) no-repeat center center fixed
-		background-size: cover
+		@include bgCover()
 		@media only screen and (min-width: 320px) and (max-width: 767px)
 			background: url(/img/gear_bg.jpg) no-repeat center center
 	.mentorship_bg
 		background: url(/img/mentorship_bg.jpg) no-repeat center center fixed
-		background-size: cover
+		@include bgCover()
 		@media only screen and (min-width: 320px) and (max-width: 767px)
 			background: url(/img/mentorship_bg.jpg) no-repeat center center
 	.leadership_bg
 		background: url(/img/leadership_bg.jpg) no-repeat center center fixed
-		background-size: cover
+		@include bgCover()
 		@media only screen and (min-width: 320px) and (max-width: 767px)
 			background: url(/img/leadership_bg.jpg) no-repeat center center
 	.academic_bg
 		background: url(/img/academic_bg.jpg) no-repeat center center fixed
-		background-size: cover
+		@include bgCover()
 		@media only screen and (min-width: 320px) and (max-width: 767px)
 			background: url(/img/academic_bg.jpg) no-repeat center center
 .touch

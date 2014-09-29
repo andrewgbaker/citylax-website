@@ -55,16 +55,16 @@ html[xmlns] .slides
 		height: 400px
 	.slider1
 		background: url(/img/slider0.jpg) no-repeat center center
-		background-size: cover
+		@include bgCover()
 	.slider2
 		background: url(/img/girl_banner.jpg) no-repeat center center
-		background-size: cover
+		@include bgCover()
 	.slider3
 		background: url(/img/slider5.jpg) no-repeat center center
-		background-size: cover
+		@include bgCover()
 	.slider4
 		background: url(/img/CityLaxGala_Slider.jpg) no-repeat center center
-		background-size: cover
+		@include bgCover()
 		.flex-caption
 			bottom: 40%
 	@media only screen and (min-width: 320px) and (max-width: 768px)
@@ -232,7 +232,7 @@ html[xmlns] .slides
 	margin: 40px auto
 	padding: 40px 0
 	background: url(../img/impact_bg.jpg) no-repeat center center
-	background-size: cover
+	@include bgCover()
 	section
 		background: $dark_gray
 		background: rgba(0,0,0,.6)
@@ -339,5 +339,15 @@ html[xmlns] .slides
 				background: #999999
 				padding: 12px 0
 	
-					
-			
+.ie8 .flexslider .slider1, .ie8 .flexslider .slider2, .ie8 .flexslider .slider3, .ie8 .flexslider .slider4, .ie8 .impact_wrap
+	background-size: cover
+	-ms-behavior: url(/backgroundsize.min.htc)
+.ie8 .lax_parallax .travel_bg, .ie8 .lax_parallax .gear_bg, .ie8 .lax_parallax .mentorship_bg, .ie8 .lax_parallax .leadership_bg, .ie8 .lax_parallax .academic_bg
+	background-size: cover
+	-ms-behavior: url(/backgroundsize.min.htc)
+.ie8 .share, .no-csstransitions .share
+	.share_wrap
+		.social
+			display: block
+			position: relative
+			margin-top: -95px

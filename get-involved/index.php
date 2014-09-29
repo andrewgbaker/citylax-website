@@ -1,5 +1,5 @@
 <?php 
-	$pageTitle = 'City Lax Denver';
+	$pageTitle = 'Get Involved - Denver City Lax';
 	$pageDescription="";
 	$pageKeywords = "";
 	$thisPage = "get_involved";
@@ -8,22 +8,22 @@
 	<section class="banner">
 		<div class="container clearfix">
 				<h3>Donate now and make it possible for us to bring lacrosse and a sports based youth development program to underserved Denver&nbsp;neighborhoods.</h3>
-				<a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=sWZOuBd4878Yw-1FyTHX55YzNdC-XUdBY1qObo0KtsMitVN9PwJVhHEWut8&dispatch=5885d80a13c0db1f8e263663d3faee8def8934b92a630e40b7fef61ab7e9fe63" class="donate btn">Donate</a>
+				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=69WGU6K25BTWU" class="donate btn" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Banner']);">Donate</a>
 		</div>
 	</section>
 	
 	<section class="involved_cta clearfix container">
 		<div class="grid3">
-			<a href="#volunteer_events" class="entypo-users">Volunteer</a>
+			<a href="#volunteer_events" aria-hidden="true" data-icon="g">Volunteer</a>
 		</div>
 		<div class="grid3">
-			<a href="#" class="entypo-mail">Donate</a>
+			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=69WGU6K25BTWU" aria-hidden="true" data-icon="G" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Get Involved']);">Donate</a>
 		</div>
 		<div class="grid3">
-			<a href="#events" class="entypo-calendar">Events</a>
+			<a href="#events" aria-hidden="true" data-icon="c">Events</a>
 		</div>
 		<div class="grid3">
-			<a href="#mc_embed_signup" class="entypo-check">Newsletter</a>
+			<a href="#mc_embed_signup" aria-hidden="true" data-icon="C">Newsletter</a>
 		</div>
 		</div>
 	</section>
@@ -35,27 +35,24 @@
 		</div>
 		<div class="grid6 event_wrap" id="events">
 			<h1>Upcoming Events</h1>
-			<a href="#">
+			<a href="http://blog.citylaxdenver.org/2014-denver-city-lax-mile-high-gala/">
 				<div class="container clearfix">
 					<div class="grid6">
 						<h2>Denver City Lax Mile High Gala</h2>
-						<p>February 26th, 2014</p>
-						<p>Sports Authority Field, Denver CO</p>
-						<span>More Info</span>
+						<p>2015 City Lax Gala TBA</p>
+						<p>See photos and read about the 2014&nbsp;Gala</p>
 					</div>
 					<div class="grid6">
 						<img src="/img/gala_thumb.jpg" alt="Denver City Lax Gala"/>
 					</div>
 				</div>
 			</a>
-			<a href="#">
+			<a href="http://blog.citylaxdenver.org/2014-denver-city-lax-dash/">
 				<div class="container clearfix">
 					<div class="grid6">
 						<h2>Denver City Lax Dash</h2>
-						<p>At the Valentines 5k</p>
-						<p>Sunday February 9th, 2014</p>
-						<p>Washington Park, Denver CO</p>
-						<span>More Info</span>
+						<p>2015 City Lax Dash TBA</p>
+						<p>See photos and read about the 2014&nbsp;Dash</p>
 					</div>
 					<div class="grid6">
 						<img src="/img/dash_thumb.jpg" alt="Denver City Lax Gala"/>
@@ -74,6 +71,25 @@
 			</div>
 		</div>
 	</section>
+	
+	<div class="container clearfix share_newsletter">
+		<div class="grid12">
+		<div class="share">
+			<section class="share_wrap">
+				<input type="checkbox" class="checkbox" id="share">
+					<label for="share" class="label" aria-hidden="true" data-icon="S"><br /><p>Share this website</p></label>
+					<section class="social">
+				    <ul>
+					      <li><a aria-hidden="true" data-icon="t" class="tweet" href="http://twitter.com/share?text='Denver City Lax - Get Involved'&url=' http://citylaxdenver.org/'&via=denvercitylax"></a></li>
+					      <li><a aria-hidden="true" data-icon="f" class="fb_share" href="http://www.facebook.com/sharer/sharer.php?u=http://citylaxdenver.org/"></a></li>
+					      <li><a aria-hidden="true" data-icon="m" class="mail_share" href="mailto:?subject=Check out Denver City Lax ' http://citylaxdenver.org/"></a></li>
+				    </ul>
+			  </section>
+		  </section>
+		</div>
+		</div>
+		
+	</div>
 	
 	
 	

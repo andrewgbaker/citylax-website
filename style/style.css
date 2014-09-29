@@ -1,11 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Oswald);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
 /* colors */
 /* media queries */
 /* fonts */
-/* Dimensions */
 @font-face {
   font-family: 'social_icons';
   src: url("socials_3/citylax.eot");
@@ -210,6 +208,15 @@ nav {
             color: white;
             font-weight: 700;
             line-height: 30px; } }
+      nav ul.main_nav li a.donate {
+        background: #efefef;
+        margin-right: 15px;
+        padding: 5px 10px; }
+        nav ul.main_nav li a.donate:hover {
+          color: #f87807; }
+        @media only screen and (min-width: 320px) and (max-width: 768px) {
+          nav ul.main_nav li a.donate {
+            background: transparent; } }
     nav ul.main_nav li.last a {
       padding-right: 0; }
     nav ul.main_nav li.last:after {
@@ -226,9 +233,9 @@ nav {
   position: absolute;
   top: 16px;
   left: 0;
-  background: url(../img/citylax_logo.png) no-repeat;
-  width: 300px;
-  height: 45px; }
+  background: url(../img/citylax_logo_no_bg.png) no-repeat;
+  width: 250px;
+  height: 85px; }
 
 .nav-mobile {
   display: none;
@@ -271,8 +278,9 @@ footer {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   height: auto;
-  padding: 20px 0;
-  margin: 50px auto 0; }
+  padding: 20px 0 10px;
+  margin: 50px auto 0;
+  position: relative; }
   footer .container {
     margin-top: 10px; }
     footer .container section h3 {
@@ -303,7 +311,6 @@ footer {
         padding: 30px 0;
         margin: 0 auto; }
         footer .container section {
-          width: 50%;
           margin: 10px 0; } }
   footer p {
     font-size: 12px;
@@ -317,9 +324,9 @@ footer {
         margin: 50px 20px;
         width: auto; } }
   footer #mc_embed_signup {
-    margin: 25px 0 45px; }
+    margin: 0 0 35px; }
     footer #mc_embed_signup h3 {
-      color: #333333; }
+      color: white; }
     footer #mc_embed_signup form {
       margin-top: 23px;
       -moz-placeholder-color: black;
@@ -351,6 +358,18 @@ footer {
           font-size: 13px;
           letter-spacing: 2px;
           max-width: 110px; }
+  footer .non_profit {
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    color: black;
+    padding-top: 20px;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    position: relative; }
+    footer .non_profit a {
+      color: #333333; }
 
 .flex-container {
   max-width: 100%;
@@ -408,15 +427,27 @@ html[xmlns] .slides {
     height: 400px; }
   .flexslider .slider1 {
     background: url(/img/slider0.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
   .flexslider .slider2 {
     background: url(/img/girl_banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
   .flexslider .slider3 {
     background: url(/img/slider5.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
   .flexslider .slider4 {
     background: url(/img/CityLaxGala_Slider.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
     .flexslider .slider4 .flex-caption {
       bottom: 40%; }
@@ -596,6 +627,9 @@ html[xmlns] .slides {
   margin: 40px auto;
   padding: 40px 0;
   background: url(../img/impact_bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   .impact_wrap section {
     background: #333333;
@@ -704,6 +738,19 @@ html[xmlns] .slides {
         background: #999999;
         padding: 12px 0; }
 
+.ie8 .flexslider .slider1, .ie8 .flexslider .slider2, .ie8 .flexslider .slider3, .ie8 .flexslider .slider4, .ie8 .impact_wrap {
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc); }
+
+.ie8 .lax_parallax .travel_bg, .ie8 .lax_parallax .gear_bg, .ie8 .lax_parallax .mentorship_bg, .ie8 .lax_parallax .leadership_bg, .ie8 .lax_parallax .academic_bg {
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc); }
+
+.ie8 .share .share_wrap .social, .no-csstransitions .share .share_wrap .social {
+  display: block;
+  position: relative;
+  margin-top: -95px; }
+
 .mission {
   margin: 50px auto 80px; }
   .mission .grid4 {
@@ -733,6 +780,9 @@ html[xmlns] .slides {
   height: 467px;
   margin: 0 auto;
   z-index: 2;
+  -webkit-box-shadow: 0 12px 9px -9px #535353;
+  -moz-box-shadow: 0 12px 9px -9px #535353;
+  box-shadow: 0 12px 9px -9px #535353;
   border-bottom: 10px solid #508ac8;
   background: url(/img/whylax_center.jpg) no-repeat bottom center; }
   .whylax_links #whylax {
@@ -856,30 +906,45 @@ html[xmlns] .slides {
         margin: 0 auto; } }
   .lax_parallax .travel_bg {
     background: url(/img/travel_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .lax_parallax .travel_bg {
         background: url(/img/travel_bg.jpg) no-repeat center center; } }
   .lax_parallax .gear_bg {
     background: url(/img/gear_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .lax_parallax .gear_bg {
         background: url(/img/gear_bg.jpg) no-repeat center center; } }
   .lax_parallax .mentorship_bg {
     background: url(/img/mentorship_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .lax_parallax .mentorship_bg {
         background: url(/img/mentorship_bg.jpg) no-repeat center center; } }
   .lax_parallax .leadership_bg {
     background: url(/img/leadership_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .lax_parallax .leadership_bg {
         background: url(/img/leadership_bg.jpg) no-repeat center center; } }
   .lax_parallax .academic_bg {
     background: url(/img/academic_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .lax_parallax .academic_bg {
@@ -930,11 +995,14 @@ html[xmlns] .slides {
       padding: 0 8px; }
 .people .coaches {
   text-align: center;
-  margin: 10px auto 30px; }
+  margin: 60px auto 40px; }
 
 .get_involved .banner {
   width: 100%;
   background: url(/img/donate_banner.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding: 50px 0;
   color: white;
@@ -977,6 +1045,7 @@ html[xmlns] .slides {
         width: 80px;
         border-right: 2px solid #508ac8;
         left: 0;
+        padding: 25px 0px 22px 0px;
         -webkit-transition: background 0.3s ease;
         -moz-transition: background 0.3s ease;
         transition: background 0.3s ease; }
@@ -1002,7 +1071,7 @@ html[xmlns] .slides {
     margin: 60px auto;
     color: #333333; }
     #volunteer_events .event_wrap a p {
-      line-height: 12px; }
+      line-height: 18px; }
     #volunteer_events .event_wrap a span {
       border: 2px solid #508ac8;
       color: #508ac8;

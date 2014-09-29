@@ -48,7 +48,7 @@ $( document ).ready(function() {
 	    
 	 // START FLEXSLIDER
 	    
-	 if($(".flexslider").length > 0) {
+	 $(function(){
  
 		// Vimeo API nonsense
 		var player = document.getElementById('player_1');
@@ -90,7 +90,7 @@ $( document ).ready(function() {
 		
 		$(".vid_wrap").fitVids();
 		
-	}
+	});
 	
 	// START ICON ANIMATION ABOUT PAGE
 	

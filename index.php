@@ -1,29 +1,22 @@
 <?php 
-	$pageTitle = 'City Lax Denver';
-	$pageDescription="";
-	$pageKeywords = "";
+	$pageTitle = 'Denver City Lax';
+	$pageDescription="Denver City Lax works to create opportunities for inner-city youth in the Denver area";
+	$pageKeywords = "Denver City Lax works to create opportunities for inner-city youth in the Denver area";
+	$thisPage = "home";
 	include("includes/header.php"); 
 ?>
 	<div class="flex-container">
 		<div class="flexslider">
 			<ul class="slides">
-			  <li class="slider4">
-			  	<a href="#">
-			    	<div class="flex-caption">
-			    		<h1>City Lax Gala 2014</h1>
-			    		<span class="btn" href="/get-involved/#events">tickets and info</span>
-			    	</div>
-			    </a>
-			  </li>
 			  <li class="slider1">
 			    <p class="flex-caption">
 			    	<span class="vid_wrap">
-			    		<iframe id="player_1" src="//player.vimeo.com/video/83713689?title=0&amp;byline=0&amp;portrait=0" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			    		<iframe id="player_1" src="//player.vimeo.com/video/87101782?title=0&amp;byline=0&amp;portrait=0" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			    	</span>
 			    </p>
 			  </li>
 			  <li class="slider2">
-			  	<a href="#">
+			  	<a href="/about/">
 				    <div class="flex-caption">
 				    	<h1>Why Lacrosse?</h1>
 				    	<p>See how the game of lacrosse has helped enrich the lives of our participants.</p>
@@ -40,6 +33,14 @@
 				    </div>
 				</a>
 			  </li>
+			  <li class="slider4">
+			  	<a href="http://citylaxdenver.org/get-involved/#events">
+			    	<div class="flex-caption">
+			    		<h1>City Lax Gala 2015</h1>
+			    		<span class="btn" href="http://citylaxdenver.org/get-involved/#events">tickets and more info</span>
+			    	</div>
+			    </a>
+			  </li>
 			</ul>
 		</div>
 	</div>
@@ -52,9 +53,9 @@
 			</a>
 		</div>
 		<div class="grid3">
-			<a href="/get-involved/">
+			<a href="http://blog.citylaxdenver.org">
 				<img src="img/donate_cta.jpg">
-				<p>Get Involved</p>
+				<p>News</p>
 			</a>
 		</div>
 		<div class="grid3">
@@ -104,9 +105,9 @@
 					<label for="share" class="label" aria-hidden="true" data-icon="S"><br /><p>Share this website</p></label>
 					<section class="social">
 				    <ul>
-					      <li><a aria-hidden="true" data-icon="t" class="tweet" href=""></a></li>
-					      <li><a aria-hidden="true" data-icon="f" class="fb_share" href=""></a></li>
-					      <li><a aria-hidden="true" data-icon="m" class="mail_share" href=""></a></li>
+					      <li><a aria-hidden="true" data-icon="t" class="tweet" href="http://twitter.com/share?text='Denver City Lax'&url=' http://citylaxdenver.org/'&via=denvercitylax"></a></li>
+					      <li><a aria-hidden="true" data-icon="f" class="fb_share" href="http://www.facebook.com/sharer/sharer.php?u=http://citylaxdenver.org/"></a></li>
+					      <li><a aria-hidden="true" data-icon="m" class="mail_share" href="mailto:?subject=Check out Denver City Lax ' http://citylaxdenver.org/"></a></li>
 				    </ul>
 			  </section>
 		  </section>

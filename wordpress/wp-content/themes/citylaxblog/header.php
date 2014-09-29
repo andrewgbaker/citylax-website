@@ -15,7 +15,7 @@
 <meta name="robots" content="all" />
 <script type="text/javascript" src="http://citylaxdenver.org/js/libs/modernizr.js"></script>
 
-<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
 <!--[if lt IE 7.]>
@@ -51,13 +51,14 @@
 		<div id="header" class="clearfix">
 			<nav>
 				<div class="container clearfix nav_wrap">
-					<div class="logo"><a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/citylax_logo.png" alt="<?php bloginfo('name'); ?>" /></a></div>
+					<div class="logo"><a href="http://citylaxdenver.org/"><img src="<?php bloginfo('template_directory'); ?>/images/citylax_logo.png" alt="<?php bloginfo('name'); ?>" /></a></div>
 					<ul class="main_nav">
+						<li><a class="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=69WGU6K25BTWU" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Blog']);">Donate</a></li>
 						<li><a href="http://citylaxdenver.org/get-involved/">Get Involved</a></li>
 						<li><a href="http://citylaxdenver.org/about/" class="facts">About</a></li>
 						<li><a href="http://citylaxdenver.org/people/">People</a></li>
 						<li><a href="http://teams.citylaxdenver.org/">Teams</a></li>
-						<li class="last" id="active_nav"><a href="#">Blog</a></li>
+						<li class="last" id="active_nav"><a href="http://blog.citylaxdenver.org">News</a></li>
 					</ul>
 				</div>
 			</nav>

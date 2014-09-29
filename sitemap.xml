@@ -5,7 +5,22 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<url>
-  <loc>http://citylaxdenver.org/</loc>
-</url>
+    <url>
+      <loc>http://citylaxdenver.org/</loc>
+    </url>
+    <url>
+        <loc>http://citylaxdenver.org/people/</loc>
+    </url>
+    <url>
+        <loc>http://citylaxdenver.org/about/</loc>
+    </url>
+    <url>
+        <loc>http://citylaxdenver.org/get-involved/</loc>
+    </url>
+    <url>
+        <loc>http://blog.citylaxdenver.org/</loc>
+    </url>
+    <url>
+        <loc>http://teams.citylaxdenver.org/</loc>
+    </url>
 </urlset>

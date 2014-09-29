@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed)
 @import url(http://fonts.googleapis.com/css?family=Open+Sans)
 @import url(http://fonts.googleapis.com/css?family=Oswald)
-@import url(http://weloveiconfonts.com/api/?family=entypo)
 
 *
 	margin: 0px
@@ -159,6 +158,14 @@ nav
 					color: white
 					font-weight: 700
 					line-height: 30px
+			a.donate
+				background: #efefef
+				margin-right: 15px
+				padding: 5px 10px
+				&:hover
+					color: #f87807
+				@media only screen and (min-width: 320px) and (max-width: 768px)
+					background: transparent
 		li.last
 			a
 				padding:
@@ -177,9 +184,9 @@ nav
 	position: absolute
 	top: 16px
 	left: 0
-	background: url(../img/citylax_logo.png) no-repeat
-	width: 300px
-	height: 45px
+	background: url(../img/citylax_logo_no_bg.png) no-repeat
+	width: 250px
+	height: 85px
 .nav-mobile 
 	display: none
 	cursor: pointer
@@ -215,8 +222,9 @@ footer
 	width: 100%
 	background: rgba(0,0,0,.2)
 	height: auto
-	padding: 20px 0
+	padding: 20px 0 10px
 	margin: 50px auto 0
+	position: relative
 	.container
 		margin:
 			top: 10px
@@ -249,7 +257,6 @@ footer
 			padding: 30px 0
 			margin: 0 auto
 			section
-				width: 50%
 				margin: 10px 0
 	p
 		font-size: 12px
@@ -262,9 +269,9 @@ footer
 			margin: 50px 20px
 			width: auto
 	#mc_embed_signup
-		margin: 25px 0 45px
+		margin: 0 0 35px
 		h3
-			color: $dark_gray
+			color: white
 		form
 			margin-top: 23px
 			input
@@ -298,4 +305,16 @@ footer
 					font-size: 13px
 					letter-spacing: 2px
 					max-width: 110px
+	.non_profit
+		text-align: center
+		font-size: 12px
+		margin: 0
+		color: black
+		padding-top: 20px
+		display: block
+		width: auto
+		margin: 0 auto
+		position: relative
+		a
+			color: $dark_gray
 	

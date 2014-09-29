@@ -2,7 +2,7 @@
 	.banner
 		width: 100% 
 		background: url(/img/donate_banner.jpg) no-repeat
-		background-size: cover
+		@include bgCover()
 		padding: 50px 0
 		color: $white
 		background-position: center bottom
@@ -42,6 +42,7 @@
 				width: 80px
 				border-right: 2px solid $citylax_blue
 				left: 0
+				padding: 25px 0px 22px 0px
 				@include transition (background .3s ease)
 			&:hover
 				&:before
@@ -66,7 +67,7 @@
 			margin: 60px auto
 			color: $dark_gray
 			p
-				line-height: 12px
+				line-height: 18px
 			span
 				border: 2px solid $citylax_blue
 				color: $citylax_blue

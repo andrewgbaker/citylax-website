@@ -17,10 +17,10 @@
 				</section>
 				<section>
 					<ul class="social_footer">
-						<li><a href="#" aria-hidden="true" data-icon="f"></a></li>
-						<li><a href="#" aria-hidden="true" data-icon="t"></a></li>
-						<li><a href="#" aria-hidden="true" data-icon="i"></a></li>
-						<li><a href="#" aria-hidden="true" data-icon="y"></a></li>
+						<li><a href="https://www.facebook.com/Visit.DenverCityLax?v=wall&ref=mf" aria-hidden="true" data-icon="f"></a></li>
+						<li><a href="https://twitter.com/denvercitylax" aria-hidden="true" data-icon="t"></a></li>
+						<li><a href="http://instagram.com/denvercitylax" aria-hidden="true" data-icon="i"></a></li>
+						<li><a href="http://www.youtube.com/user/DenverCityLax" aria-hidden="true" data-icon="y"></a></li>
 					</ul>
 				</section>
 			</div>
@@ -28,10 +28,10 @@
 				<section>
 					<h3>Menu</h3>
 					<ul>
-						<li><a href="#">Get Involved</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">People</a></li>
-						<li><a href="#">Blog</a></li>
+						<li><a href="/get-involved/">Get Involved</a></li>
+						<li><a href="/about/">About</a></li>
+						<li><a href="/people/">People</a></li>
+						<li><a href="http://blog.citylaxdenver.org/">Blog</a></li>
 					</ul>
 				</section>
 			</div>
@@ -53,6 +53,8 @@
 				</div>
 			</div>
 		</div>
+		<p class="non_profit">Denver City Lax is a 501(c)(3)<br />
+		Made in Denver by <a href="http://thisisbaker.com">baker</a></p>
 </footer>
 	
 

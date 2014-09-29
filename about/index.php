@@ -1,5 +1,5 @@
 <?php 
-	$pageTitle = 'City Lax Denver';
+	$pageTitle = 'About Us - Denver City Lax';
 	$pageDescription="";
 	$pageKeywords = "";
 	$thisPage = "about";
@@ -66,10 +66,10 @@
 						<label for="share" class="label" aria-hidden="true" data-icon="S"><br /><p>Share this website</p></label>
 						<section class="social">
 					    <ul>
-						      <li><a aria-hidden="true" data-icon="t" class="tweet" href=""></a></li>
-						      <li><a aria-hidden="true" data-icon="f" class="fb_share" href=""></a></li>
-						      <li><a aria-hidden="true" data-icon="m" class="mail_share" href=""></a></li>
-					    </ul>
+					      <li><a aria-hidden="true" data-icon="t" class="tweet" href="http://twitter.com/share?text='Denver City Lax'&url=' http://citylaxdenver.org/'&via=denvercitylax"></a></li>
+					      <li><a aria-hidden="true" data-icon="f" class="fb_share" href="http://www.facebook.com/sharer/sharer.php?u=http://citylaxdenver.org/"></a></li>
+					      <li><a aria-hidden="true" data-icon="m" class="mail_share" href="mailto:?subject=Check out Denver City Lax ' http://citylaxdenver.org/"></a></li>
+				    </ul>
 				  </section>
 			  </section>
 			</div>

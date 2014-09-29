@@ -22,11 +22,8 @@ $break-large: 900px
 /* fonts
 $didot: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif
 
-$borderColor1: rgba(87, 9, 9,0.25)
-$borderColor2: rgba(87, 9, 9,0.50)
-$borderColor3: rgba(87, 9, 9,0.75)
-$borderColor4: rgba(87, 9, 9, 1)
-
-/* Dimensions */
-$borderWidthX: 30px
-$borderWidthY: 30px
+@mixin bgCover ()
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover

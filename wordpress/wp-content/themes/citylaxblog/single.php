@@ -8,7 +8,7 @@ Template Name: Single
 
 		<!-- Maincontent start -->
 		<div id="maincontent">
-			<h2>Posted in <?php the_category(' '); ?></h2>
+			<h4>Posted in <?php the_category(' '); ?></h4>
 
 <?php while (have_posts()) : the_post(); ?>
 			<div class="singlepost">

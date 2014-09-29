@@ -1,5 +1,5 @@
 <?php 
-	$pageTitle = 'Our People- City Lax Denver';
+	$pageTitle = 'Our People - Denver City Lax';
 	$pageDescription="";
 	$pageKeywords = "";
 	$thisPage = "people";
@@ -13,7 +13,7 @@
 					<h3>Rod Allison</h3>
 		    		<h5>Executive Director</h5>
 				</span>
-				<img src="/img/rod_allison.jpg"  alt="Rod Allison"/>
+				<img src="/img/rod_allison2.jpg"  alt="Rod Allison"/>
 	    		<p>Private attorney and current commissioner for the Colorado High School Lacrosse Coaches Association.  Denver Public school graduate.  Awarded 2009 Man of the Year in Colorado lacrosse.  An original founder of Denver City Lax.</p>
 	
 	<p class="quote">“It’s important to be involved in the community, and it’s especially rewarding working with youth.  Denver City Lax is driven by the idea, ‘Talent is universal, opportunity is not.’  Helping young people realize their potential, and watching them take hold of their own lives is very inspiring.”</p>
@@ -47,9 +47,9 @@
 			<div class="people_wrap">
 				<span>
 					<h3>Dillon Roy</h3>
-		    		<h5>Volunteer & Program Development</h5>
+		    		<h5>Development Volunteer</h5>
 				</span>
-				<img src="/img/dillon_roy.jpg"  alt="Rod Allison"/>
+				<img src="/img/dillon_roy2.jpg"  alt="Rod Allison"/>
 	    		<p>Graduated from East High School and attended the University of Denver where he was a team captain and academic All-American.  Since graduating, he has spent a substantial amount of time volunteering both on and off the lacrosse field.  Dillon currently plays for the Denver Outlaws and Team Canada.</p>
 	
 	<p class="quote">“I choose to spend my time with Denver City Lax because I support their effort to remove the financial barrier to the sport.  I have played at the highest levels of lacrosse, and believe that the single most important thing I can do is to focus on introducing the game to new kids.”</p>
@@ -65,17 +65,19 @@
 	    			<p><strong>Bill Tierney</strong> <br />University of Denver Men’s Lacrosse Head Coach</p>
 				</div>
 				<div class="people_wrap">
-					<img src="/img/matt_brown.jpg"  alt="Matt Brown"/>
-	    			<p><strong>Matt Brown</strong> <br />University of Denver Men’s Lacrosse Associate Head Coach</p>
-	    		</div>
-				<div class="people_wrap">
 					<img src="/img/mac_freeman.jpg"  alt="Mac Freeman"/>
 	    			<p><strong>Mac Freeman</strong> <br />Denver Broncos Senior Vice President of Business Development & Denver Outlaws President</p>
 				</div>
 				<div class="people_wrap">
+					<img src="/img/matt_brown.jpg"  alt="Matt Brown"/>
+	    			<p><strong>Matt Brown</strong> <br />University of Denver Men’s Lacrosse Associate Head Coach</p>
+	    		</div>
+	    		<!--
+				<div class="people_wrap">
 					<img src="/img/rod_allison2.jpg"  alt="David Hallman"/>
 	    			<p><strong>David Hallman</strong> <br />Hiawatha Davis Recreation Manager</p>
 				</div>
+				-->
 				<div class="people_wrap">
 					<img src="/img/john_lay.jpg"  alt="John Lay"/>
 	    			<p><strong>John Lay</strong> <br />Past President of Denver Metro Chamber of Commerce</p>
@@ -85,8 +87,12 @@
 	    			<p><strong>Dillon Roy</strong> <br />Boom Town Lacrosse Co-Founder & Denver Outlaws</p>
 	    		</div>
 				<div class="people_wrap">
-					<img src="/img/rod_allison2.jpg"  alt="Rod Allison"/>
+					<img src="/img/rod_allison.jpg"  alt="Rod Allison"/>
 	    			<p><strong>Rod Allison</strong> <br />Denver City Lax Executive Director</p>
+				</div>
+				<div class="people_wrap">
+					<img src="/img/gregory_crichlow.jpg"  alt="gregory crichlow"/>
+	    			<p><strong>Gregory Crichlow</strong> <br />Owner, Chocolate Spoke Bike Studio & Architect</p>
 				</div>
 	    </section>
     </div>
@@ -95,15 +101,18 @@
 		<div class="grid4">
 			<ul>
 				<li>Ben Allison</li>
-				<li>Ben Felson</li>
 				<li>Caroline Grote</li>
-				<li>Denali Johnson</li>
+				<li>Cristen Hoag</li>
 				<li>Dillon Roy</li>
 				<li>Drew Tyrie</li>
-				<li>Ethan Demby</li>
+				<li>Drew Babb</li>
 				<li>Geoff Sweezy</li>
 				<li>Greg Litvak</li>
 				<li>Wyatt Autterson</li>
+				<li>Eric Law</li>
+				<li>Henry Strazza</li>
+				<li>Charles Mullins</li> 
+				<li>Gunnar Autterson</li>
 			</ul>
     	</div>
 		<div class="grid4">
@@ -112,12 +121,15 @@
 				<li>Jake Shannon</li>
 				<li>Jessie Massey</li>
 				<li>Josie Owen</li>
-				<li>Kathleen Boland</li>
+				<li>Brandon Zerr</li>
 				<li>Kyle Wildnauer-Haigney</li>
 				<li>Meg Cloutman</li>
 				<li>Mike Koster</li>
 				<li>Myya Bonner</li>
 				<li>Andrew Baker</li>
+				<li>Charlie Mullins</li>				
+				<li>Edward DeCroce</li>
+				<li>Mariana Silliman</li>
 			</ul>
     	</div>
     	<div class="grid4">
@@ -125,13 +137,15 @@
 				<li>Nellie Hayes</li>
 				<li>Nick Budrow</li>
 				<li>Nik Stoffel</li>
-				<li>Paul Britton</li>
 				<li>Peyton Tyrie</li>
 				<li>Piet Dudley</li>
 				<li>Rachael Greenberg</li>
 				<li>Steve Juniel</li>
-				<li>Tierra Romero</li>
+				<li>Taylor Young</li>
 				<li>Zach Tedeschi</li>
+				<li>Nick Newman</li>
+				<li>Michael Watters</li>
+				<li>Terry Ellis</li>
 			</ul>
     	</div>
 	</section>
@@ -162,6 +176,8 @@
 				<li>The Leo S. Walsh Foundation</li>
 				<li>The Colin L. Cassidy Memorial Fund</li>
 				<li>The Owen Family Foundation</li>
+				<li>Bender Family Foundation</li>
+				<li>Denver Metro Chamber Leadership Foundation</li>
 			</ul>
     	</div>
 	</section>
