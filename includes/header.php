@@ -60,7 +60,7 @@
 		<div class="container clearfix nav_wrap">
 			<a href="/" class="logo"></a>
 			<ul class="main_nav">
-				<li><a class="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=69WGU6K25BTWU" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Header']);">Donate</a></li>
+				<li><a class="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HEXQ3B3QN7EL8" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Header']);">Donate</a></li>
 				<li <?php if ($thisPage=="get_involved") echo " id=\"active_nav\""; ?>><a href="/get-involved/">Get Involved</a></li>
 				<li <?php if ($thisPage=="about") echo " id=\"active_nav\""; ?>><a href="/about/" class="facts">About</a></li>
 				<li <?php if ($thisPage=="people") echo " id=\"active_nav\""; ?>><a href="/people/">People</a></li>

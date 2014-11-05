@@ -13,8 +13,6 @@
 <meta name="author" content="Andrew Baker Design and Development" />
 <meta name="copyright" content="Copyright <?php the_date('Y'); ?> <?php bloginfo('name'); ?>" />
 <meta name="robots" content="all" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script type="text/javascript" src="http://citylaxdenver.org/js/libs/modernizr.js"></script>
 
 <link rel="shortcut icon" href="/favicon.ico" />

@@ -8,7 +8,7 @@
 	<section class="banner">
 		<div class="container clearfix">
 				<h3>Donate now and make it possible for us to bring lacrosse and a sports based youth development program to underserved Denver&nbsp;neighborhoods.</h3>
-				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=69WGU6K25BTWU" class="donate btn" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Banner']);">Donate</a>
+				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HEXQ3B3QN7EL8" class="donate btn" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Banner']);">Donate</a>
 		</div>
 	</section>
 	
@@ -17,7 +17,7 @@
 			<a href="#volunteer_events" aria-hidden="true" data-icon="g">Volunteer</a>
 		</div>
 		<div class="grid3">
-			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=69WGU6K25BTWU" aria-hidden="true" data-icon="G" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Get Involved']);">Donate</a>
+			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HEXQ3B3QN7EL8" aria-hidden="true" data-icon="G" onClick="_gaq.push(['_trackEvent', 'Donate', 'click', 'Donate Get Involved']);">Donate</a>
 		</div>
 		<div class="grid3">
 			<a href="#events" aria-hidden="true" data-icon="c">Events</a>

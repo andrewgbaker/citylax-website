@@ -21,7 +21,12 @@ Template Name: Index
 				</div>
 			</div>
 <?php endwhile; ?>
-<?php wpex_pagination(); ?>
+<?php if (is_paged()) : ?>
+			<div id="pagination" class="clear">
+				<span class="left"><?php posts_nav_link('','&laquo; Back','') ?></span>
+				<span class="right"><?php posts_nav_link('','','More &raquo;') ?></span>
+			</div>
+<?php endif; ?>
 
 		</div>
 		<!-- Maincontent end -->
